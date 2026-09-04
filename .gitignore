@@ -1,0 +1,10 @@
+# Generated media and recoverable deployment artifacts
+audio/
+assets/
+data/
+.rollback-*/
+index_test.html
+
+# Local/editor files
+.DS_Store
+*.swp
