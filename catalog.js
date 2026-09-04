@@ -27,6 +27,15 @@ window.LOTM_CATALOG = [
         voice: "edge-tts/id-ID-ArdiNeural",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol2-recap-2",
+        label: "Part 2 — Backlund aftermath",
+        file: "data/lotm-vol2-recap-2.js?v=20260904-part2-15min-1",
+        description: "15-scene continuation: the True Creator plot, Great Smog aftermath, and Sherlock's departure for the sea.",
+        voice: "edge-tts/id-ID-ArdiNeural",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
