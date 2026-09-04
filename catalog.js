@@ -21,12 +21,13 @@ window.LOTM_CATALOG = [
     parts: [
       {
         id: "lotm-vol2-recap-1",
-        label: "Part 1 — Scene plan",
-        file: "data/lotm-vol2-recap-1.js?v=20260904-part1-15min-1",
-        description: "15-scene script plan. Audio has not been published or generated from this screen yet.",
+        label: "Part 1 — Faceless",
+        file: "data/lotm-vol2-recap-1.js?v=20260904-part1-audio-1",
+        description: "15-scene Faceless recap, narrated with edge-tts/id-ID-ArdiNeural.",
         voice: "edge-tts/id-ID-ArdiNeural",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        audioBase: "audio/lotm-vol2-recap-1",
+        audioAvailable: true,
+        availability: "Audio ready"
       },
       {
         id: "lotm-vol2-recap-2",

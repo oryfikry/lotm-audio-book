@@ -140,7 +140,10 @@ async function copy(text, success) {
   try { await navigator.clipboard.writeText(text); setStatus(success); }
   catch { setStatus("Copy failed — please select the text manually."); }
 }
-function audioUrl(scene) { return `audio/${scene.audio_file.split("/").pop()}`; }
+function audioUrl(scene) {
+  const base = activePart?.audioBase || "audio";
+  return `${base}/${scene.audio_file.split("/").pop()}`;
+}
 function download(url, name) {
   const anchor = document.createElement("a");
   anchor.href = url;
