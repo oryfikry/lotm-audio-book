@@ -1,31 +1,66 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LOTM Vol 1 Recap — Narration Package</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LOTM recap library — scenes, scripts, and audio status.">
+  <title>LOTM Recap Library</title>
+  <link rel="stylesheet" href="style.css?v=20260904-library-1">
 </head>
 <body>
-<header>
-  <div class="meta" id="meta"></div>
-  <h1>Lord of the Mysteries</h1>
-  <p class="sub">Volume 1 Recap — narration package</p>
-</header>
-<section id="toolbar">
-  <label>Search <input id="q" type="search" placeholder="scene, kata kunci…"></label>
-  <label>Scene <input id="sort" type="number" value="1" min="1" max="19"></label>
-  <button id="dl-all">Download all audio (zip)</button>
-  <span id="status" role="status"></span>
-</section>
-<main id="list"></main>
-<div id="player" hidden>
-  <button id="p-close" aria-label="Close player">×</button>
-  <div class="p-title" id="p-title"></div>
-  <audio id="p-audio" controls preload="metadata"></audio>
-</div>
-<footer>static build · voice Fenrir</footer>
-<script src="data.js"></script>
-<script src="app.js"></script>
+  <header class="hero">
+    <div class="eyebrow">Narration library</div>
+    <h1>Lord of the Mysteries</h1>
+    <p id="subtitle">Browse recap scripts by volume and part.</p>
+  </header>
+
+  <main>
+    <section class="control-panel" aria-label="Scene library controls">
+      <div class="selectors">
+        <label>Volume
+          <select id="volume" aria-label="Select volume"></select>
+        </label>
+        <label>Part
+          <select id="part" aria-label="Select part"></select>
+        </label>
+        <label class="search-label">Find a scene
+          <input id="q" type="search" placeholder="scene, narration, keyword…" autocomplete="off">
+        </label>
+        <label>Jump to scene
+          <input id="scene-jump" type="number" value="1" min="1" inputmode="numeric">
+        </label>
+      </div>
+      <div class="summary-row">
+        <div class="summary" id="summary" role="status"></div>
+        <button id="dl-all" hidden>Download available audio</button>
+      </div>
+    </section>
+
+    <section class="part-banner" id="part-banner" aria-live="polite">
+      <div>
+        <span class="status-pill" id="availability"></span>
+        <h2 id="part-title"></h2>
+        <p id="part-description"></p>
+      </div>
+      <dl class="part-stats">
+        <div><dt>Scenes</dt><dd id="scene-count">—</dd></div>
+        <div><dt>Voice</dt><dd id="voice">—</dd></div>
+        <div><dt>Duration</dt><dd id="duration">—</dd></div>
+      </dl>
+    </section>
+
+    <p class="result-count" id="result-count"></p>
+    <section id="list" class="scene-list" aria-label="Scenes"></section>
+  </main>
+
+  <div id="player" hidden aria-live="polite">
+    <button id="p-close" aria-label="Close player">×</button>
+    <div class="p-title" id="p-title"></div>
+    <audio id="p-audio" controls preload="metadata"></audio>
+  </div>
+
+  <footer>LOTM recap library · scripts remain available before audio production</footer>
+  <script src="catalog.js?v=20260904-part1-15min-1"></script>
+  <script src="app.js?v=20260904-library-1"></script>
 </body>
 </html>

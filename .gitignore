@@ -1,7 +1,8 @@
 # Generated media and recoverable deployment artifacts
 audio/
 assets/
-data/
+data/*
+!data/*.js
 .rollback-*/
 index_test.html
 
