@@ -96,7 +96,8 @@ function render() {
   const scenes = data.scenes.filter((scene) => !query || matches(scene, query));
   const sceneWord = scenes.length === 1 ? "scene" : "scenes";
   $("#result-count").textContent = query ? `${scenes.length} ${sceneWord} match “${query}”` : `${scenes.length} ${sceneWord}`;
-  setStatus(`${data.scenes.length} scenes · ${activePart.audioAvailable ? "audio available" : "audio not generated"}`);
+  const withAudio = data.scenes.filter((scene) => scene.real_seconds).length;
+  setStatus(`${data.scenes.length} scenes · ${activePart.audioAvailable ? `audio ${withAudio}/${data.scenes.length}` : "audio not generated"}`);
   const fragment = document.createDocumentFragment();
   for (const scene of scenes) {
     const card = document.createElement("article");
@@ -121,12 +122,13 @@ function render() {
     actions.className = "actions";
     actions.append(makeButton("⧉ Copy narration", () => copy(scene.narration, "Narration copied")));
     actions.append(makeButton("⧉ Copy keywords", () => copy(`[visual] ${(scene.visual_keywords || []).join(", ")}\n[sfx] ${(scene.sound_keywords || []).join(", ")}`, "Keywords copied")));
-    if (activePart.audioAvailable) {
+    const sceneHasAudio = Boolean(activePart.audioAvailable && scene.real_seconds);
+    if (sceneHasAudio) {
       actions.prepend(makeButton("▶ Play", () => openPlayer(scene)));
       actions.insertBefore(makeButton("⬇ MP3", () => download(audioUrl(scene), `${scene.id}.mp3`)), actions.children[1]);
     }
     card.append(actions);
-    if (!activePart.audioAvailable) {
+    if (!sceneHasAudio) {
       const pending = document.createElement("p");
       pending.className = "pending-note";
       pending.textContent = "Audio pending — scene script and production keywords are ready.";
@@ -180,7 +182,8 @@ $("#dl-all").addEventListener("click", async () => {
   button.disabled = true;
   setStatus("Preparing audio download…");
   try {
-    const entries = await Promise.all(data.scenes.map(async (scene) => {
+    const ready = data.scenes.filter((scene) => scene.real_seconds);
+    const entries = await Promise.all(ready.map(async (scene) => {
       const response = await fetch(audioUrl(scene));
       if (!response.ok) throw new Error(`${scene.id}: HTTP ${response.status}`);
       return { name: `${scene.id}.mp3`, bytes: new Uint8Array(await response.arrayBuffer()) };

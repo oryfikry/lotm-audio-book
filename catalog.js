@@ -39,5 +39,21 @@ window.LOTM_CATALOG = [
         availability: "Script ready · audio pending"
       }
     ]
+  },
+  {
+    id: "vol-3",
+    label: "Volume 3",
+    parts: [
+      {
+        id: "lotm-vol3-recap-1",
+        label: "Part 1 — The Adventurer",
+        file: "data/lotm-vol3-recap-1.js?v=20260908-vol3-part1-1",
+        description: "42-scene Vol. 3 opener: Gehrman Sparrow, the White Agate voyage, Bansy Harbor, and Bayam. Narrated with gemini Puck.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioBase: "audio/lotm-vol3-recap-1",
+        audioAvailable: true,
+        availability: "Audio 41/42 · scene-042 pending"
+      }
+    ]
   }
 ];
