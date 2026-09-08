@@ -132,6 +132,18 @@ Also expect stray out-of-order cues in hand-made SRTs (a paragraph sitting in
 the wrong block). The splitter contains them but does not reorder them. Leave
 them alone unless the user asks — it is their script.
 
+### Step 2b — clean source artifacts before TTS
+Check the parsed scenes before generating audio; anything left in the text WILL be
+read aloud. Seen in Vol. 3 Part 3:
+- **Citation markers.** Three cues carried a literal `[cite: 8]`. Strip with
+  `re.sub(r"\s*\[cite:\s*\d+\]", "", narration)`.
+- **Fragment scenes.** The re-splitter cut mid-quote and left a 6-word scene
+  (~3 s MP3). Merge any scene under ~30 words into its neighbour, keeping the
+  text verbatim and in order, then renumber the ids.
+
+Quick check: `min(len(s["narration"].split()) for s in scenes)` and a grep for
+`cite:` / stray brackets.
+
 ### Step 3 — author keywords (manual, no tool)
 Add `visual_keywords` and `sound_keywords` to every scene in
 `_scenes_raw.json`. Read the narration and write:
@@ -229,6 +241,7 @@ gap-skipping, last-scene stop, and no-advance-when-off.
    vol-2 lotm-vol2-recap-2 scenes=15 withAudio=0   (script only)
    vol-3 lotm-vol3-recap-1 scenes=42 withAudio=42
    vol-3 lotm-vol3-recap-2 scenes=39 withAudio=39
+   vol-3 lotm-vol3-recap-3 scenes=39 withAudio=8    (in progress)
    ```
 3. Live HTTP 200 on the shell, `app.js`, `catalog.js`, every `data/<part>.js`,
    each `audio/<part>/scene-*.mp3`, and the two `assets/<part>/*.txt`.
@@ -298,8 +311,8 @@ paid key) while the schedule is still ticking.
 Precedent: hourly job `25d590c1a324` ("LOTM Vol3 Part2 TTS resume") did exactly
 that for `lotm-vol3-recap-2` — sat silent through several dead windows, then
 filled the remaining 37 scenes and self-published once the quota reopened. It has
-since been removed because the part completed. **No resume cron is scheduled
-right now**, which is the correct resting state.
+since been removed because the part completed. Job `6e1e516bbf1c` now does the
+same for `lotm-vol3-recap-3`.
 
 The job prompt must include: if the script printed nothing, reply `SILENT` and
 stop — so dead windows cost no tokens and send no message. Clone that prompt for
@@ -316,10 +329,11 @@ the next stalled part and pass the new job's id as `CRON_JOB_ID`.
 | 2 | Part 2 — Backlund aftermath | 15 | 0/15 | script only | Ardi (planned) |
 | 3 | Part 1 — The Adventurer | 42 | 42/42 | 37.54 min | Puck |
 | 3 | Part 2 — Sea God Scepter | 39 | 39/39 | 35.49 min | Puck |
+| 3 | Part 3 — Marionettist | 39 | 8/39 | 7.97 min so far | Puck |
 
-Vol. 3 Part 2 was finished by the hourly resume cron (job `25d590c1a324`), which
-can now be removed. Vol. 2 Part 2 has never had audio approved — do not generate
-it without asking.
+Vol. 3 Part 2 was finished by hourly resume cron `25d590c1a324`, which retired
+itself on completion. Vol. 3 Part 3 is mid-run behind cron `6e1e516bbf1c`.
+Vol. 2 Part 2 has never had audio approved — do not generate it without asking.
 
 ---
 

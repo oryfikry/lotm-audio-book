@@ -63,6 +63,16 @@ window.LOTM_CATALOG = [
         audioBase: "audio/lotm-vol3-recap-2",
         audioAvailable: true,
         availability: "Audio ready · 39 scenes"
+      },
+      {
+        id: "lotm-vol3-recap-3",
+        label: "Part 3 — Marionettist",
+        file: "data/lotm-vol3-recap-3.js?v=20260908-vol3-part3-1",
+        description: "39-scene continuation: boarding the Golden Dream, Edwina Edwards and Frank Lee, the sunken Elf temple, the mermaid song, and Klein's promotion to Sequence 5 Marionettist.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioBase: "audio/lotm-vol3-recap-3",
+        audioAvailable: true,
+        availability: "Audio 8/39 · quota pending"
       }
     ]
   }
