@@ -47,12 +47,22 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol3-recap-1",
         label: "Part 1 — The Adventurer",
-        file: "data/lotm-vol3-recap-1.js?v=20260908-vol3-part1-complete",
+        file: "data/lotm-vol3-recap-1.js?v=20260908-vol3-part2-1",
         description: "42-scene Vol. 3 opener: Gehrman Sparrow, the White Agate voyage, Bansy Harbor, and Bayam. Narrated with gemini Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioBase: "audio/lotm-vol3-recap-1",
         audioAvailable: true,
         availability: "Audio ready · 42 scenes"
+      },
+      {
+        id: "lotm-vol3-recap-2",
+        label: "Part 2 — Sea God Scepter",
+        file: "data/lotm-vol3-recap-2.js?v=20260908-vol3-part2-1",
+        description: "39-scene continuation: Arrodes on the radio, the dying Sea God Kalvetua, the Rose School assassins, and the scepter that saves Bayam.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioBase: "audio/lotm-vol3-recap-2",
+        audioAvailable: true,
+        availability: "Audio 2/39 · quota pending"
       }
     ]
   }
