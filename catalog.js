@@ -57,12 +57,12 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol3-recap-2",
         label: "Part 2 — Sea God Scepter",
-        file: "data/lotm-vol3-recap-2.js?v=20260908-vol3-part2-1",
+        file: "data/lotm-vol3-recap-2.js?v=resume-20260908-1524",
         description: "39-scene continuation: Arrodes on the radio, the dying Sea God Kalvetua, the Rose School assassins, and the scepter that saves Bayam.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioBase: "audio/lotm-vol3-recap-2",
         audioAvailable: true,
-        availability: "Audio 2/39 · quota pending"
+        availability: "Audio ready · 39 scenes"
       }
     ]
   }
