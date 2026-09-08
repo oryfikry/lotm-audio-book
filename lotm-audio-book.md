@@ -56,6 +56,7 @@ they actually run (it holds `.env` and the audio). If you edit one, sync both �
 │   ├── build_manifest.py
 │   ├── publish_part.py
 │   ├── resume_part.py
+│   ├── resume_queue.py       # multi-part resume; owns cron retirement
 │   ├── vol3_style.txt        # TTS style-prompt template
 │   ├── check_site.js         # catalog/data integrity test
 │   ├── check_autoplay.js     # player autoplay regression test
@@ -242,6 +243,7 @@ gap-skipping, last-scene stop, and no-advance-when-off.
    vol-3 lotm-vol3-recap-1 scenes=42 withAudio=42
    vol-3 lotm-vol3-recap-2 scenes=39 withAudio=39
    vol-3 lotm-vol3-recap-3 scenes=39 withAudio=8    (in progress)
+   vol-3 lotm-vol3-recap-4 scenes=37 withAudio=0    (script only)
    ```
 3. Live HTTP 200 on the shell, `app.js`, `catalog.js`, every `data/<part>.js`,
    each `audio/<part>/scene-*.mp3`, and the two `assets/<part>/*.txt`.
@@ -288,6 +290,21 @@ PART=<part> CRON_JOB_ID=<job-id> python3 resume_part.py
   browser holding a cached `catalog.js` kept showing the old label.)
 - `CRON_JOB_ID` is optional but recommended: see the lifecycle rule below.
 
+### More than one part pending — use the queue
+`resume_part.py` retires its cron as soon as **its** part completes, which would
+strand any other outstanding part. When two or more parts await audio, drive them
+with the queue instead:
+
+```bash
+PARTS=lotm-vol3-recap-3,lotm-vol3-recap-4 CRON_JOB_ID=<job-id> python3 resume_queue.py
+```
+- Works the list in order, skipping parts that are already complete.
+- Calls `resume_part.py` per part **without** `CRON_JOB_ID`, so only the queue may
+  retire the job — and it does so only when every listed part has full audio.
+- Stops early the moment a part makes no progress: the quota window is closed and
+  later parts would only burn more backoff.
+- Silent (exit 0, no stdout) when nothing changed.
+
 ### Cron lifecycle rule — create only on limit, delete on completion
 A resume cron is a **temporary workaround for the Gemini quota, not standing
 infrastructure**:
@@ -330,9 +347,11 @@ the next stalled part and pass the new job's id as `CRON_JOB_ID`.
 | 3 | Part 1 — The Adventurer | 42 | 42/42 | 37.54 min | Puck |
 | 3 | Part 2 — Sea God Scepter | 39 | 39/39 | 35.49 min | Puck |
 | 3 | Part 3 — Marionettist | 39 | 8/39 | 7.97 min so far | Puck |
+| 3 | Part 4 — Blood Admiral | 37 | 0/37 | script only | Puck (planned) |
 
 Vol. 3 Part 2 was finished by hourly resume cron `25d590c1a324`, which retired
-itself on completion. Vol. 3 Part 3 is mid-run behind cron `6e1e516bbf1c`.
+itself on completion. Vol. 3 Parts 3 and 4 are both queued behind cron
+`6e1e516bbf1c`, which now runs `resume_queue.py` over both.
 Vol. 2 Part 2 has never had audio approved — do not generate it without asking.
 
 ---

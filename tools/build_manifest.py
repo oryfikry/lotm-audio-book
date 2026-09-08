@@ -5,6 +5,8 @@ D="/home/ubuntu/audio-novel-pipeline/out-lotm/"+PART
 TITLES={
  "lotm-vol3-recap-1":"Lord of the Mysteries — Volume 3: Traveler · Part 1: The Adventurer",
  "lotm-vol3-recap-2":"Lord of the Mysteries — Volume 3: Traveler · Part 2: Sea God Scepter",
+ "lotm-vol3-recap-3":"Lord of the Mysteries — Volume 3: Traveler · Part 3: Marionettist",
+ "lotm-vol3-recap-4":"Lord of the Mysteries — Volume 3: Traveler · Part 4: Blood Admiral",
 }
 sc=json.load(open(D+"/_scenes_raw.json"))
 WPM=139.5

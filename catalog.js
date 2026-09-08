@@ -73,6 +73,16 @@ window.LOTM_CATALOG = [
         audioBase: "audio/lotm-vol3-recap-3",
         audioAvailable: true,
         availability: "Audio 8/39 · quota pending"
+      },
+      {
+        id: "lotm-vol3-recap-4",
+        label: "Part 4 — Blood Admiral",
+        file: "data/lotm-vol3-recap-4.js?v=20260908-vol3-part4-1",
+        description: "37-scene continuation: hunting Blood Admiral Senor aboard the Tree of Flesh, the first humanoid Marionette, the Balam tomb, and Danitz's wardrobe nightmare.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioBase: "audio/lotm-vol3-recap-4",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
