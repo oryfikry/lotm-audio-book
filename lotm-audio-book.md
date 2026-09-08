@@ -56,7 +56,10 @@ they actually run (it holds `.env` and the audio). If you edit one, sync both �
 │   ├── build_manifest.py
 │   ├── publish_part.py
 │   ├── resume_part.py
-│   └── vol3_style.txt        # TTS style-prompt template
+│   ├── vol3_style.txt        # TTS style-prompt template
+│   ├── check_site.js         # catalog/data integrity test
+│   ├── check_autoplay.js     # player autoplay regression test
+│   └── sync-check.sh         # tools/ vs pipeline-dir drift
 ├── index.html                # shell: selectors, banner, scene list, player
 ├── app.js                    # all UI logic incl. per-scene audio gating
 ├── catalog.js                # volume/part registry + availability labels
@@ -194,14 +197,30 @@ way for a while). When a part completes, change it to `"Audio ready · N scenes"
 `publish_part.py` only copies MP3s that exist AND have `real_seconds`, so a
 partial publish never leaves a broken audio URL on the site.
 
+### Player: autoplay next scene
+The floating player has an `Auto` pill (`#p-auto`, skip-forward glyph) next to the
+close button:
+- Toggles continuous playback; state persists in `localStorage` under
+  `lotm.autoplayNext` and defaults to off.
+- On the audio `ended` event it advances to the next scene **that has audio**,
+  computed from `data.scenes.filter((scene) => scene.real_seconds)` — so gaps in a
+  partially narrated part are skipped rather than played as a dead URL.
+- It scrolls the newly playing card into view and stops with a status message at
+  the last playable scene (no wrap-around).
+
+Regression test: `node /var/www/yt/tools/check_autoplay.js` drives the real
+`app.js` through a DOM shim and asserts the toggle, persistence, advancing,
+gap-skipping, last-scene stop, and no-advance-when-off.
+
 ---
 
 ## 6. Verification checklist (run before claiming success)
 
 1. `node --check` on every changed JS file — `app.js`, `catalog.js`, `data/<part>.js`.
-2. VM shim test — loads the catalog, then every data file, asserting scene counts:
+2. VM shim tests — catalog/data integrity, plus the player's autoplay logic:
    ```bash
    node /var/www/yt/tools/check_site.js
+   node /var/www/yt/tools/check_autoplay.js
    ```
    Expected today:
    ```
@@ -361,6 +380,7 @@ PART=lotm-vol3-recap-3 CRON_JOB_ID=<job-id> python3 resume_part.py
 
 # verify + commit
 node /var/www/yt/tools/check_site.js
+node /var/www/yt/tools/check_autoplay.js
 cd /var/www/yt && node --check app.js && node --check catalog.js
 git add -A && git commit -m "..."
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="LOTM recap library — scenes, scripts, and audio status.">
   <title>LOTM Recap Library</title>
-  <link rel="stylesheet" href="style.css?v=20260904-library-1">
+  <link rel="stylesheet" href="style.css?v=20260908-autoplay-1">
 </head>
 <body>
   <header class="hero">
@@ -54,13 +54,16 @@
   </main>
 
   <div id="player" hidden aria-live="polite">
-    <button id="p-close" aria-label="Close player">×</button>
     <div class="p-title" id="p-title"></div>
+    <div class="p-controls">
+      <button id="p-auto" type="button" aria-pressed="false" title="Autoplay next scene" aria-label="Autoplay next scene"><span aria-hidden="true">⏭</span><span class="p-auto-label">Auto</span></button>
+      <button id="p-close" aria-label="Close player">×</button>
+    </div>
     <audio id="p-audio" controls preload="metadata"></audio>
   </div>
 
   <footer>LOTM recap library · scripts remain available before audio production</footer>
-  <script src="catalog.js?v=20260908-vol3-part2-complete"></script>
-  <script src="app.js?v=20260908-vol3-part2-complete"></script>
+  <script src="catalog.js?v=20260908-autoplay-1"></script>
+  <script src="app.js?v=20260908-autoplay-1"></script>
 </body>
 </html>

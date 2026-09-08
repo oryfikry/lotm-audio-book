@@ -156,13 +156,57 @@ function download(url, name) {
 }
 const player = $("#player");
 const pAudio = $("#p-audio");
+const autoButton = $("#p-auto");
+const AUTOPLAY_KEY = "lotm.autoplayNext";
+let autoplayNext = localStorage.getItem(AUTOPLAY_KEY) === "1";
+let playingId = null;
+
+function paintAutoButton() {
+  autoButton.classList.toggle("on", autoplayNext);
+  autoButton.setAttribute("aria-pressed", String(autoplayNext));
+  const state = autoplayNext ? "on" : "off";
+  autoButton.title = `Autoplay next scene: ${state}`;
+  autoButton.setAttribute("aria-label", `Autoplay next scene: ${state}`);
+}
+
+/* Next scene that actually has audio, in the order currently rendered. */
+function nextPlayable(fromId) {
+  if (!data) return null;
+  const pool = data.scenes.filter((scene) => scene.real_seconds);
+  const index = pool.findIndex((scene) => scene.id === fromId);
+  return index === -1 ? null : pool[index + 1] || null;
+}
+
 function openPlayer(scene) {
+  playingId = scene.id;
   $("#p-title").textContent = `${scene.id} · ${fmt(scene.real_seconds)}`;
   pAudio.src = audioUrl(scene);
   player.hidden = false;
   pAudio.play().catch(() => {});
 }
-$("#p-close").addEventListener("click", () => { pAudio.pause(); player.hidden = true; });
+
+autoButton.addEventListener("click", () => {
+  autoplayNext = !autoplayNext;
+  localStorage.setItem(AUTOPLAY_KEY, autoplayNext ? "1" : "0");
+  paintAutoButton();
+  setStatus(autoplayNext ? "Autoplay next scene: on" : "Autoplay next scene: off");
+});
+
+pAudio.addEventListener("ended", () => {
+  if (!autoplayNext) return;
+  const next = nextPlayable(playingId);
+  if (!next) {
+    setStatus("Autoplay finished — last scene with audio.");
+    return;
+  }
+  openPlayer(next);
+  const card = [...$("#list").children]
+    .find((element) => element.querySelector("h3")?.textContent === next.id);
+  if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+paintAutoButton();
+$("#p-close").addEventListener("click", () => { pAudio.pause(); player.hidden = true; playingId = null; });
 $("#volume").addEventListener("change", (event) => {
   activeVolume = catalog.find((volume) => volume.id === event.target.value);
   configureParts(activeVolume?.parts[0]?.id);
