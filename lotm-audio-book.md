@@ -244,26 +244,47 @@ Model `gemini/gemini-3.1-flash-tts-preview/Puck` via the remote 9router.
 
 ### Unattended resume
 ```bash
-PART=<part> python3 resume_part.py
+PART=<part> CRON_JOB_ID=<job-id> python3 resume_part.py
 ```
 - Probes ONE scene first. If the quota is still closed it exits silently
   (exit 0, no stdout). **Never** let a scheduled job walk the full missing list
   on a dead window — each scene burns minutes of backoff.
-- On progress: generates remaining MP3s, rebuilds the manifest, publishes,
-  and rewrites the `availability` label plus the `data/<part>.js?v=` token in
-  `catalog.js`.
-- **Gap to close by hand:** it does NOT bump the `catalog.js?v=` / `app.js?v=`
-  tokens in `index.html`. A browser holding a cached `catalog.js` therefore keeps
-  the old availability label and the old data URL. After any resume run that
-  reported progress, bump both tokens in `index.html` to a fresh version and
-  re-verify (section 6, step 4).
+- On progress: generates remaining MP3s, rebuilds the manifest, publishes, and
+  rewrites the `availability` label plus all three coordinated cache tokens —
+  `data/<part>.js?v=` in `catalog.js`, and `catalog.js?v=` / `app.js?v=` in
+  `index.html`. (Earlier versions left the `index.html` tokens stale, so a
+  browser holding a cached `catalog.js` kept showing the old label.)
+- `CRON_JOB_ID` is optional but recommended: see the lifecycle rule below.
 
-Hourly cron job `25d590c1a324` ("LOTM Vol3 Part2 TTS resume") did exactly that
-for `lotm-vol3-recap-2`: it sat silent through several dead windows, then filled
-the remaining 37 scenes and self-published once the quota reopened. Its prompt
-says: if the script printed nothing, reply `SILENT` and stop — so dead windows
-cost no tokens and send no message. Remove the job once its part completes, and
-clone the same pattern for the next part.
+### Cron lifecycle rule — create only on limit, delete on completion
+A resume cron is a **temporary workaround for the Gemini quota, not standing
+infrastructure**:
+
+1. **Create it only when a run actually hits the quota limit** and scenes remain
+   unnarrated. If a part finishes in one pass, no cron is created at all.
+2. Pass the job's own id as `CRON_JOB_ID` so the script can retire itself.
+3. When the part reaches 100% audio, `resume_part.py` removes the job via
+   `hermes cron remove <id>` and says so in its output line. The next part that
+   stalls gets a fresh job.
+
+Removal is **verified, not assumed**: `hermes cron remove` exits 0 even for an
+id that does not exist (it just prints "Failed to remove job"), so `retire()`
+checks `hermes cron list` before and after and reports
+`removal FAILED, still scheduled` if the job survived.
+
+The script also retires the job on a run where the part was already complete —
+that covers the case where a part finishes by other means (a manual run, or a
+paid key) while the schedule is still ticking.
+
+Precedent: hourly job `25d590c1a324` ("LOTM Vol3 Part2 TTS resume") did exactly
+that for `lotm-vol3-recap-2` — sat silent through several dead windows, then
+filled the remaining 37 scenes and self-published once the quota reopened. It has
+since been removed because the part completed. **No resume cron is scheduled
+right now**, which is the correct resting state.
+
+The job prompt must include: if the script printed nothing, reply `SILENT` and
+stop — so dead windows cost no tokens and send no message. Clone that prompt for
+the next stalled part and pass the new job's id as `CRON_JOB_ID`.
 
 ---
 
@@ -334,8 +355,9 @@ PART=lotm-vol3-recap-3 $UV run python tts_part.py scene-001
 PART=lotm-vol3-recap-3 python3 build_manifest.py
 PART=lotm-vol3-recap-3 python3 publish_part.py
 
-# unattended top-up of whatever is still missing
-PART=lotm-vol3-recap-3 python3 resume_part.py
+# unattended top-up (only when the quota limit actually blocked a run)
+PART=lotm-vol3-recap-3 CRON_JOB_ID=<job-id> python3 resume_part.py
+# ^ self-deletes that cron job once the part hits 100% audio
 
 # verify + commit
 node /var/www/yt/tools/check_site.js
