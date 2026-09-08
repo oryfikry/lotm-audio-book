@@ -244,6 +244,7 @@ gap-skipping, last-scene stop, and no-advance-when-off.
    vol-3 lotm-vol3-recap-2 scenes=39 withAudio=39
    vol-3 lotm-vol3-recap-3 scenes=39 withAudio=8    (in progress)
    vol-3 lotm-vol3-recap-4 scenes=37 withAudio=0    (script only)
+   vol-3 lotm-vol3-recap-5 scenes=39 withAudio=0    (script only)
    ```
 3. Live HTTP 200 on the shell, `app.js`, `catalog.js`, every `data/<part>.js`,
    each `audio/<part>/scene-*.mp3`, and the two `assets/<part>/*.txt`.
@@ -305,6 +306,11 @@ PARTS=lotm-vol3-recap-3,lotm-vol3-recap-4 CRON_JOB_ID=<job-id> python3 resume_qu
   later parts would only burn more backoff.
 - Silent (exit 0, no stdout) when nothing changed.
 
+**One manual step the queue does not do:** a part published script-only has
+`audioAvailable: false`, which hides the play buttons for every scene. When such a
+part first gains audio, flip that flag to `true` in `catalog.js` by hand (the cron
+prompt reminds the agent to do this).
+
 ### Cron lifecycle rule — create only on limit, delete on completion
 A resume cron is a **temporary workaround for the Gemini quota, not standing
 infrastructure**:
@@ -348,10 +354,11 @@ the next stalled part and pass the new job's id as `CRON_JOB_ID`.
 | 3 | Part 2 — Sea God Scepter | 39 | 39/39 | 35.49 min | Puck |
 | 3 | Part 3 — Marionettist | 39 | 8/39 | 7.97 min so far | Puck |
 | 3 | Part 4 — Blood Admiral | 37 | 0/37 | script only | Puck (planned) |
+| 3 | Part 5 — The Hermit | 39 | 0/39 | script only | Puck (planned) |
 
 Vol. 3 Part 2 was finished by hourly resume cron `25d590c1a324`, which retired
-itself on completion. Vol. 3 Parts 3 and 4 are both queued behind cron
-`6e1e516bbf1c`, which now runs `resume_queue.py` over both.
+itself on completion. Vol. 3 Parts 3, 4 and 5 are all queued behind cron
+`6e1e516bbf1c`, which runs `resume_queue.py` over the three in order.
 Vol. 2 Part 2 has never had audio approved — do not generate it without asking.
 
 ---
