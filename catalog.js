@@ -93,6 +93,16 @@ window.LOTM_CATALOG = [
         audioBase: "audio/lotm-vol3-recap-5",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol3-recap-6",
+        label: "Part 6 — Groselle's Travels",
+        file: "data/lotm-vol3-recap-6.js?v=20260909-vol3-part6-1",
+        description: "37-scene continuation: the sealed book world, the cross-era heroes Groselle, Longsan, Mobius and Snowman, the Frost Dragon King, and the farewell as time resumes.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioBase: "audio/lotm-vol3-recap-6",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
