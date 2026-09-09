@@ -98,9 +98,19 @@ window.LOTM_CATALOG = [
         id: "lotm-vol3-recap-6",
         label: "Part 6 — Groselle's Travels",
         file: "data/lotm-vol3-recap-6.js?v=20260909-vol3-part6-1",
-        description: "37-scene continuation: the sealed book world, the cross-era heroes Groselle, Longsan, Mobius and Snowman, the Frost Dragon King, and the farewell as time resumes.",
+        description: "33-scene continuation: the sealed book world, the cross-era heroes Groselle, Longsan, Mobius and Snowman, the Frost Dragon King, and the farewell as time resumes.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioBase: "audio/lotm-vol3-recap-6",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol3-recap-7",
+        label: "Part 7 — Bayam and Amon",
+        file: "data/lotm-vol3-recap-7.js?v=20260909-vol3-part7-1",
+        description: "36-scene continuation: Bayam, the new Sea God faith, Amon's Time Worm intrusion, the Tarot Club meeting, Danitz's farewell, and Klein's departure for Backlund.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioBase: "audio/lotm-vol3-recap-7",
         audioAvailable: false,
         availability: "Script ready · audio pending"
       }

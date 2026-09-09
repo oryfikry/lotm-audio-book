@@ -9,6 +9,7 @@ TITLES={
  "lotm-vol3-recap-4":"Lord of the Mysteries — Volume 3: Traveler · Part 4: Blood Admiral",
  "lotm-vol3-recap-5":"Lord of the Mysteries — Volume 3: Traveler · Part 5: The Hermit",
  "lotm-vol3-recap-6":"Lord of the Mysteries — Volume 3: Traveler · Part 6: Groselle's Travels",
+ "lotm-vol3-recap-7":"Lord of the Mysteries — Volume 3: Traveler · Part 7: Bayam and Amon",
 }
 sc=json.load(open(D+"/_scenes_raw.json"))
 WPM=139.5
