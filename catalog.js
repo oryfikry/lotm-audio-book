@@ -87,8 +87,8 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol3-recap-5",
         label: "Part 5 — The Hermit",
-        file: "data/lotm-vol3-recap-5.js?v=20260908-vol3-part5-1",
-        description: "39-scene continuation: Cattleya joins the Tarot Club as The Hermit, Roselle's Outer Deities diary, the sunken pyramid and Card of the Tyrant, and the Black Tulip standoff.",
+        file: "data/lotm-vol3-recap-5.js?v=20260909-vol3-part5-rev2",
+        description: "Revised 35-scene cut: Cattleya joins the Tarot Club as The Hermit, Roselle's Outer Deities diary, the sunken pyramid and Card of the Tyrant, and the Black Tulip standoff.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioBase: "audio/lotm-vol3-recap-5",
         audioAvailable: false,

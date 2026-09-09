@@ -145,6 +145,25 @@ read aloud. Seen in Vol. 3 Part 3:
 Quick check: `min(len(s["narration"].split()) for s in scenes)` and a grep for
 `cite:` / stray brackets.
 
+### Step 2c — replacing a script the user revises
+The user may resend a part's SRT as a revised cut. If the part has **no audio yet**,
+replacement is clean:
+1. Confirm `ls out-lotm/<part>/audio | wc -l` is 0. If MP3s exist, follow the
+   archive-and-regenerate rule instead (pitfall 5) — never keep audio from an
+   older script.
+2. Move the old `_scenes_raw.json`, `scenario.json`, `narration.txt`,
+   `keywords.txt` into `out-lotm/.archive-<part>-<timestamp>/`.
+3. Re-run `parse_srt.py`, re-clean, re-author keywords, rebuild, republish, and
+   bump the part's `?v=` token so the revised scene data is not served from cache.
+4. Update the scene count everywhere it is recorded (catalog description, this
+   file's state table and expected `check_site.js` output).
+
+**Do not ping-pong between splitting and merging.** Scenes are only *defective*
+when they are tiny fragments (a few words, ~2-3 s of audio). A 200-220 word scene
+is roughly 90-95 s of narration and is perfectly acceptable — splitting it only to
+merge the leftover tail back wastes effort and churns the ids. Fix fragments; leave
+long-but-coherent scenes alone.
+
 ### Step 3 — author keywords (manual, no tool)
 Add `visual_keywords` and `sound_keywords` to every scene in
 `_scenes_raw.json`. Read the narration and write:
@@ -244,7 +263,7 @@ gap-skipping, last-scene stop, and no-advance-when-off.
    vol-3 lotm-vol3-recap-2 scenes=39 withAudio=39
    vol-3 lotm-vol3-recap-3 scenes=39 withAudio=8    (in progress)
    vol-3 lotm-vol3-recap-4 scenes=37 withAudio=0    (script only)
-   vol-3 lotm-vol3-recap-5 scenes=39 withAudio=0    (script only)
+   vol-3 lotm-vol3-recap-5 scenes=35 withAudio=0    (script only)
    vol-3 lotm-vol3-recap-6 scenes=37 withAudio=0    (script only)
    ```
 3. Live HTTP 200 on the shell, `app.js`, `catalog.js`, every `data/<part>.js`,
@@ -355,7 +374,7 @@ the next stalled part and pass the new job's id as `CRON_JOB_ID`.
 | 3 | Part 2 — Sea God Scepter | 39 | 39/39 | 35.49 min | Puck |
 | 3 | Part 3 — Marionettist | 39 | 8/39 | 7.97 min so far | Puck |
 | 3 | Part 4 — Blood Admiral | 37 | 0/37 | script only | Puck (planned) |
-| 3 | Part 5 — The Hermit | 39 | 0/39 | script only | Puck (planned) |
+| 3 | Part 5 — The Hermit | 35 | 0/35 | script only (revised SRT) | Puck (planned) |
 | 3 | Part 6 — Groselle's Travels | 37 | 0/37 | script only | Puck (planned) |
 
 Vol. 3 Part 2 was finished by hourly resume cron `25d590c1a324`, which retired
