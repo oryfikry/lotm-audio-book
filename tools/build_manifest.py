@@ -10,6 +10,10 @@ TITLES={
  "lotm-vol3-recap-5":"Lord of the Mysteries — Volume 3: Traveler · Part 5: The Hermit",
  "lotm-vol3-recap-6":"Lord of the Mysteries — Volume 3: Traveler · Part 6: Groselle's Travels",
  "lotm-vol3-recap-7":"Lord of the Mysteries — Volume 3: Traveler · Part 7: Bayam and Amon",
+ "lotm-vol3-recap-8":"Lord of the Mysteries — Volume 3: Traveler · Part 8: Grand Finale",
+ "lotm-vol4-recap-1":"Lord of the Mysteries — Volume 4: Undying · Part 1: Dwayne Dantes",
+ "lotm-vol4-recap-2":"Lord of the Mysteries — Volume 4: Undying · Part 2: The Jacob Vault",
+ "lotm-vol4-recap-3":"Lord of the Mysteries — Volume 4: Undying · Part 3: Bizarro Sorcerer Recipe",
 }
 sc=json.load(open(D+"/_scenes_raw.json"))
 WPM=139.5
@@ -28,7 +32,7 @@ for s in sc:
         "estimated_seconds":round(words/WPM*60,2),"real_seconds":real,
         "visual_keywords":s["visual_keywords"],"sound_keywords":s["sound_keywords"],
         "audio_file":"audio/"+s["id"]+".mp3"})
-man={"part":PART,"volume":"vol-3","title":TITLES.get(PART,PART),
+man={"part":PART,"volume":"vol-4" if PART.startswith("lotm-vol4-") else "vol-3","title":TITLES.get(PART,PART),
   "voice":"gemini/gemini-3.1-flash-tts-preview/Puck","language":"id",
   "words":sum(x["words"] for x in scenes),
   "real_duration_minutes":round(tot/60,2),
