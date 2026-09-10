@@ -3,9 +3,16 @@
 const $ = (selector) => document.querySelector(selector);
 const catalog = window.LOTM_CATALOG || [];
 const cache = new Map();
+const STATE_KEY = "lotm.library.state";
+const savedState = (() => {
+  try { return JSON.parse(localStorage.getItem(STATE_KEY)) || {}; }
+  catch { return {}; }
+})();
 let activeVolume = null;
 let activePart = null;
 let data = null;
+let restoredSceneId = savedState.sceneId || null;
+let stateScrollTimer = null;
 
 const fmt = (seconds) => {
   if (seconds == null || Number.isNaN(Number(seconds))) return "—";
@@ -27,14 +34,24 @@ function selectOptions(select, options, selected, label) {
   }));
 }
 function configureVolumes() {
-  activeVolume = catalog[0];
+  activeVolume = catalog.find((volume) => volume.id === savedState.volumeId) || catalog[0];
   selectOptions($("#volume"), catalog, activeVolume.id, (volume) => volume.label);
-  configureParts(activeVolume.parts[0]?.id);
+  const savedPart = activeVolume.parts.find((part) => part.id === savedState.partId);
+  configureParts(savedPart?.id || activeVolume.parts[0]?.id);
 }
 function configureParts(partId) {
   activePart = currentParts().find((part) => part.id === partId) || currentParts()[0];
   selectOptions($("#part"), currentParts(), activePart?.id, (part) => part.label);
+  saveState();
   if (activePart) loadPart(activePart).catch(showLoadError);
+}
+function saveState(sceneId = restoredSceneId) {
+  if (!activeVolume || !activePart) return;
+  localStorage.setItem(STATE_KEY, JSON.stringify({
+    volumeId: activeVolume.id,
+    partId: activePart.id,
+    sceneId: sceneId || null
+  }));
 }
 async function getPartData(part) {
   if (cache.has(part.id)) return cache.get(part.id);
@@ -62,8 +79,19 @@ async function loadPart(part) {
   const pill = $("#availability");
   pill.textContent = part.availability;
   pill.classList.toggle("pending", !part.audioAvailable);
-  $("#dl-all").hidden = !part.audioAvailable;
+  $("#dl-all").hidden = !activePart.audioAvailable;
   render();
+  requestAnimationFrame(restoreScene);
+}
+function restoreScene() {
+  if (!data) return;
+  const scene = data.scenes.find((item) => item.id === restoredSceneId) || data.scenes[0];
+  if (!scene) return;
+  restoredSceneId = scene.id;
+  $("#scene-jump").value = String(data.scenes.indexOf(scene) + 1);
+  const card = [...$("#list").children].find((element) => element.querySelector("h3")?.textContent === scene.id);
+  if (card) card.scrollIntoView({ behavior: "auto", block: "center" });
+  saveState(scene.id);
 }
 function showLoadError(error) {
   console.error(error);
@@ -138,6 +166,19 @@ function render() {
   }
   $("#list").replaceChildren(fragment);
 }
+function rememberVisibleScene() {
+  if (!data || !$("#list").children.length || $("#q").value.trim()) return;
+  const center = window.innerHeight / 2;
+  let closest = null;
+  let distance = Infinity;
+  for (const card of $("#list").children) {
+    const rect = card.getBoundingClientRect();
+    const current = Math.abs((rect.top + rect.bottom) / 2 - center);
+    if (current < distance) { distance = current; closest = card; }
+  }
+  const id = closest?.querySelector("h3")?.textContent;
+  if (id) { restoredSceneId = id; saveState(id); }
+}
 async function copy(text, success) {
   try { await navigator.clipboard.writeText(text); setStatus(success); }
   catch { setStatus("Copy failed — please select the text manually."); }
@@ -209,17 +250,27 @@ paintAutoButton();
 $("#p-close").addEventListener("click", () => { pAudio.pause(); player.hidden = true; playingId = null; });
 $("#volume").addEventListener("change", (event) => {
   activeVolume = catalog.find((volume) => volume.id === event.target.value);
+  restoredSceneId = null;
   configureParts(activeVolume?.parts[0]?.id);
 });
-$("#part").addEventListener("change", (event) => configureParts(event.target.value));
+$("#part").addEventListener("change", (event) => { restoredSceneId = null; configureParts(event.target.value); });
 $("#q").addEventListener("input", render);
 $("#scene-jump").addEventListener("change", (event) => {
   const scene = data?.scenes[Number(event.target.value) - 1];
   if (!scene) return;
   const card = [...$("#list").children].find((element) => element.querySelector("h3")?.textContent === scene.id);
   if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+  restoredSceneId = scene.id;
+  saveState(scene.id);
   if (activePart?.audioAvailable) openPlayer(scene);
 });
+window.addEventListener("scroll", () => {
+  if (stateScrollTimer) return;
+  stateScrollTimer = setTimeout(() => { stateScrollTimer = null; rememberVisibleScene(); }, 180);
+}, { passive: true });
+const backToTop = $("#back-to-top");
+window.addEventListener("scroll", () => backToTop.classList.toggle("visible", window.scrollY > 500), { passive: true });
+backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 $("#dl-all").addEventListener("click", async () => {
   if (!data || !activePart?.audioAvailable) return;
   const button = $("#dl-all");
