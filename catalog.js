@@ -165,6 +165,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-5",
+        label: "Part 5 — Tamu Tak Terduga & Tim Arkeologi",
+        file: "data/lotm-vol4-recap-5.js",
+        description: "19-scene canonical (ch. 789-802): Roselle's final diary pages ('All the mausoleums have been built... beware of the moon!'), Fors's Leymano's Travels rental business, Ma'am Mary's Coim Company share offer, Emlyn's vampire hunt (two charred heads, Lilith's Ring), the Keeper's corruption at Saint Samuel Cathedral, and Klein cleansing his tainted soul with the Mental Terror Candle and Sea God Scepter.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
