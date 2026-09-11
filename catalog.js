@@ -132,30 +132,30 @@ window.LOTM_CATALOG = [
     parts: [
       {
         id: "lotm-vol4-recap-1",
-        label: "Part 1 — Dwayne Dantes",
-        file: "data/lotm-vol4-recap-1.js?v=20260910-vol4-part1-1",
-        description: "30-scene canonical opener: Dwayne Dantes arrives in Backlund, builds his household, enters the Evernight social circle, and establishes his position among Backlund's elite.",
+        label: "Part 1 — Kembalinya ke Backlund & Debut Dantès",
+        file: "data/lotm-vol4-recap-1.js?v=20260911-vol4-15part-1",
+        description: "21-scene canonical opener (ch. 733–746): Klein returns to Backlund, sells his bike shares, investigates the Williams Street ruins with Sharron, and Dwayne Dantès is born — butler interviews, 160 Böklund Street, the Roselle diary page, and the Tarot Club's biggest sale.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol4-recap-2",
-        label: "Part 2 — The Jacob Vault",
+        label: "Part 2 — Sang Butler, Buku Harian & Misa Agung",
         file: "data/lotm-vol4-recap-2.js?v=20260910-vol4-part2-final-canonical-3",
-        description: "31-scene final canonical continuation: the Mayfair Club, Enuni, Hazel's mutant rat, the Jacob family vault, Amon's curse, Azik's warning, Tarot Club intelligence, Red Gloves, Leonard, and the Bizarro Sorcerer plan.",
+        description: "Placeholder — naskah 15-part Part 2 (ch. 747–760) sedang diproduksi; entri ini memuat data lama sementara.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
-        availability: "Script ready · audio pending"
+        availability: "In production"
       },
       {
         id: "lotm-vol4-recap-3",
-        label: "Part 3 — Bizarro Sorcerer Recipe",
+        label: "Part 3 — Nation Reestablishment Society",
         file: "data/lotm-vol4-recap-3.js?v=20260910-vol4-part3-canonical-1",
-        description: "29-scene canonical continuation: the aristocratic hunt, Emlyn's pursuit of Ernes Boyar, the Red Gloves inspection, Klein's meeting with Leonard, Hazel's rat mentor, and the Bizarro Sorcerer formula.",
+        description: "Placeholder — naskah 15-part Part 3 (ch. 761–774) sedang diproduksi; entri ini memuat data lama sementara.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
-        availability: "Script ready · audio pending"
+        availability: "In production"
       }
     ]
   }
