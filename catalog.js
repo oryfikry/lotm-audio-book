@@ -160,7 +160,7 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol4-recap-4",
         label: "Part 4 — Pembunuhan Karakter & Akhir Buku Harian",
-        file: "data/lotm-vol4-recap-4.js?v=20260911-vol4-part4-1",
+        file: "data/lotm-vol4-recap-4.js?v=20260911-vol4-part4-2",
         description: "21-scene canonical (ch. 775-788): Trissy's lead on Viscount Stratford, infiltrating Mr. X's gathering above the mist, the Oracle's death by a single shot, Uskup Elektra's hospital visit, the Portland Moment party and the 'karakter' murder of Sherlock Moriarty, Hazel in the garden, Dorian's warning, and the secret passage to the party congress.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
