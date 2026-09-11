@@ -307,3 +307,28 @@ function makeZip(entries) {
   return new Blob([output], { type: "application/zip" });
 }
 configureVolumes();
+
+/* Theme toggle (dark/light) with persistence. */
+(() => {
+  const KEY = "lotm.library.theme";
+  const root = document.documentElement;
+  const button = document.getElementById("theme-toggle");
+  const icon = document.getElementById("theme-icon");
+  const apply = (theme) => {
+    root.dataset.theme = theme;
+    icon.textContent = theme === "light" ? "☾" : "☀";
+    button.title = theme === "light" ? "Ganti ke mode gelap" : "Ganti ke mode terang";
+    button.setAttribute("aria-label", button.title);
+  };
+  let theme = null;
+  try { theme = localStorage.getItem(KEY); } catch {}
+  if (!theme) {
+    theme = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark";
+  }
+  apply(theme);
+  button.addEventListener("click", () => {
+    theme = root.dataset.theme === "light" ? "dark" : "light";
+    try { localStorage.setItem(KEY, theme); } catch {}
+    apply(theme);
+  });
+})();
