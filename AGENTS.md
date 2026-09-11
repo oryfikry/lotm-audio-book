@@ -36,7 +36,15 @@
 3. Tambah entri di `catalog.js` (id, label, file dengan `?v=<tanggal>-<nama>-<N>`, description, voice, audioAvailable: false, availability "Script ready · audio pending"). **Gunakan Python replace, jangan patch tool dengan string panjang (pernah terpotong & merusak sintaks).**
 4. Cache bust: `sed -i 's/?v=<lama>/<baru>/g' /var/www/yt/index.html`.
 5. Verifikasi: `node --check catalog.js`, `curl` file data → HTTP 200.
-6. `git add` + commit pesa desktiptif.
+6. `git add` + commit pesan deskriptif.
+
+## Kebijakan Cache (config nginx `deploy/nginx-yt.oryfikry.my.id.conf`, diterapkan 2026-09-11)
+- `/data/*` dan `catalog.js` → **`no-store`** (tidak pernah di-cache browser/Cloudflare; perubahan deploy langsung terlihat).
+- `index.html` → `max-age=300` (revalidate 5 menit).
+- `app.js`, `style.css`, audio, gambar → `max-age=31536000, immutable` (aman karena pakai `?v=` di index.html; file konten tak pernah diubah in-place).
+- **Dampak praktis:** sejak 2026-09-11, deploy file data/catalog TIDAK perlu bust `?v=` lagi — file lama yang masih ter-cache di edge Cloudflare akan kedaluwarsa sendiri maks. 4 jam (cache lama dibuat sebelum kebijakan baru). Untuk deploy mendatang, tetap naikkan `?v=` di index.html hanya saat mengubah `app.js`/`style.css`.
+- Objek Cloudflare lama (dibuat sebelum kebijakan) akan habis masa simpannya sendiri (`max-age=14400` lama); tidak ada token API Cloudflare di VPS untuk purge manual — jika butuh purge segera, lakukan dari dashboard Cloudflare → Caching → Purge Everything, atau minta owner menambahkan token.
+- Backup config sebelum perubahan: `/etc/nginx/yt.oryfikry.my.id.bak-20260911-cache` (versi asli).
 
 ## Kesalahan Lalu (jangan diulang)
 - Trissy muncul pertama di ch. 773–774 (Part 3): tertangkap bukan oleh Klein langsung — ia bersembunyi di gorong-gorong dekat rumah keluarga Macht; Walter (valet Dantès) membri makanan; Senor (marionette Wraith) yang menghadang & berunding; Hazel nyaris jadi korban penyakitnya saat menyusuri gorong-gorong. William Sikes disiksa-bunuh Trissy untuk nama Viscount Stratford (kapten pengawal kerajaan, pembunuh Pangeran Edessak yang juga di bawah perintah orang lain). Detail di scene-002 Part 4 pernah salah (Trissy seolah sudah tertangkap + "Walter marionette") — sudah dikoreksi.
