@@ -25,6 +25,7 @@
 
 ## Aturan Naskah (kesepakatan user)
 - **Kronologi: tambahkan cerita awal karakter/peristiwa di scene pertama kemunculannya — JANGAN memotong scene penting.**
+- **AUDIT WAJIB SEBELUM DEPLOY:** setiap scene harus diverifikasi bab-per-bab ke sumber EPUB (baca bab penuh yang menjadi dasar scene, bukan hanya awal/akhir). Scene pembunuhan/battle/transaksi WAJIB dicek mekanismenya (item yang dipakai, urutan kejadian, angka). Kesalahan terbesar di masa lalu terjadi karena scene ditulis dari ingatan tanpa membaca bab penuh (contoh: scene 6–8 Part 4 — Paper Angel terlewat, mekanisme kontrol senyap & pelarian salah).
 - Target 30–60 menit per part (@145 kata/menit); battle/momen kanon diberi cakupan lebih tinggi; potongan di batas arc.
 - Bahasa Indonesia, gaya narasi recap: rekap → detail peristiwa → analisis kanon (jelaskan "kenapa").
 - Naskah markdown: `## scene-NNN (JUDUL — ch.NNN)` + paragraf narasi; scene terakhir = outro + teaser part berikutnya; scene "CATATAN PRODUKSI" dibuang saat konversi.
