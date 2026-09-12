@@ -174,6 +174,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-6",
+        label: "Part 6 — Ekspedisi Pulau: Kekuatan Tyrant",
+        file: "data/lotm-vol4-recap-6.js",
+        description: "18-scene canonical (ch. 803-814): Lilith's Ring and the Sanguine champion, the Hartlarkh archaeology tragedy and the mind dragon, meeting Alger at the Bayam cemetery, the primitive island expedition — the demigod feathered serpent, the Illusory Chime Tree, Alger's dreadful singing, the black baboon of Disorder, the cathedral ruins, the forbidden catacomb painting (the three Kings of Angels devouring the Creator), the six-winged gargoyle battle, the Tyrant Card of Blasphemy, and the island that vanished.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
