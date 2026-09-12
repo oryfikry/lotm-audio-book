@@ -183,6 +183,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-7",
+        label: "Part 7 — Sidik Jiwa & Pergerakan Malam",
+        file: "data/lotm-vol4-recap-7.js",
+        description: "20-scene canonical (ch. 815-828): after-action review of the Tyrant card and the Twilight Hermit Order deduction, Fors's Interrogator transaction, Dantès's first ball, Will Auceptin and the too-sweet ice cream, the dream trap for Hazel, Trissy next door to Xio, the stolen thoughts of the sewer demigod, the Tarot Gathering that shattered Derrick's faith, and the poetic meeting with Queen Mystic.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
