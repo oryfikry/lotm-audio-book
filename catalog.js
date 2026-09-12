@@ -192,6 +192,24 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-8",
+        label: "Part 8 — Kota Berkabut: Pencurian Antigonus",
+        file: "data/lotm-vol4-recap-8.js",
+        description: "16-scene canonical (ch. 829-842): the perfect infiltration of Saint Samuel Cathedral's Chanis Gate, the erasing angel, the foggy town prison of the Goddess, Lady Despair Panatiya and the death of Wraith Senor, Mr. A surviving as a shadow, the hanging-corpse cathedral, Zaratul's projection from history, the Antigonus bloodline revelation, the three-killers stand-off, Panatiya's betrayal — and the Sequence 0: The Fool card at the throne of maggots.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-9",
+        label: "Part 9 — Formula Bizarro Sorcerer",
+        file: "data/lotm-vol4-recap-9.js",
+        description: "14-scene canonical (ch. 843-856): the magical mushroom battle, the escape via the Dark Sacred Emblem, the upgraded seven-soul Creeping Hunger, the verified Bizarro Sorcerer formula and its demigod-killing performance ritual, Saint Anthony's investigation, Red Gloves closing in, Leonard's brilliant deduction to the empty grave of Klein Moretti, the dream confrontation and unwritten truce, the arms-dealing confession, Baron Syndras's offer, Xio and Fors as secret bodyguards — and the Cuarón suicide trap.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
