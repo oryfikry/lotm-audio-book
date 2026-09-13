@@ -219,6 +219,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-11",
+        label: "Part 11 — Amon Datang & Pencurian Mumi",
+        file: "data/lotm-vol4-recap-11.js",
+        description: "12-scene canonical (ch. 871-886): the charred Marauder-demigod rat and Arrodes's silver lightning, Dwayne Dantès takes the Loen Charity Bursary Foundation director seat, Vice Admiral Iceberg briefs Danitz on West Balam's factions, Leonard cracks the frame-up logic behind Cuaron's suicide, Sharron's letter summons Sherlock Moriarty, Blasphemer Amon arrives in Backlund hunting believers of The Fool, Arrodes interrogates the Chained God and the Mother Tree of Desire, the Pharaoh-mummy embalming ritual, the Pritz Harbor heist under demigod noses, Sharron's lighthouse decoy run, the mummy hidden in Groselle's Travels, and Sharron's letter on Spirit World Plunderers and Calderon City.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
