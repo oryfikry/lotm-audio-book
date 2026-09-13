@@ -25,6 +25,7 @@
 
 ## Aturan Naskah (kesepakatan user)
 - **Kronologi: tambahkan cerita awal karakter/peristiwa di scene pertama kemunculannya — JANGAN memotong scene penting.**
+- **JANGAN ada scene "menggantung" (lompatan naratif tanpa jembatan):** setiap perpindahan, kabur, atau keluar dari lokasi berbahaya WAJIB dinarasikan mekanismenya (minimal 1–2 kalimat), bukan tiba-tiba "kembali ke X". User menolak membaca scene yang tergantung. Contoh pelanggaran: Part 9 scene-002 & 004 — Klein keluar dari kota berkabut tidak pernah dijelaskan, tiba-tiba sudah kembali ke katedral & tiba di 160 Böklund hanya celana dalam (escape via Dark Sacred Emblem hanya diteaser di INTRO, tidak pernah dinarasikan).
 - **AUDIT WAJIB SEBELUM DEPLOY:** setiap scene harus diverifikasi bab-per-bab ke sumber EPUB (baca bab penuh yang menjadi dasar scene, bukan hanya awal/akhir). Scene pembunuhan/battle/transaksi WAJIB dicek mekanismenya (item yang dipakai, urutan kejadian, angka). Kesalahan terbesar di masa lalu terjadi karena scene ditulis dari ingatan tanpa membaca bab penuh (contoh: scene 6–8 Part 4 — Paper Angel terlewat, mekanisme kontrol senyap & pelarian salah).
 - Target 30–60 menit per part (@145 kata/menit); battle/momen kanon diberi cakupan lebih tinggi; potongan di batas arc.
 - Bahasa Indonesia, gaya narasi recap: rekap → detail peristiwa → analisis kanon (jelaskan "kenapa").
