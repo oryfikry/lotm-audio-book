@@ -227,7 +227,16 @@ window.LOTM_CATALOG = [
         description: "12-scene canonical (ch. 871-886, ~68 min): the charred Marauder-demigod rat and Arrodes's silver lightning, Dantès takes the bursary foundation director seat with two reform proposals, Vice Admiral Iceberg briefs Danitz on West Balam, Daly mediumship plus Leonard cracks the frame-up logic behind Cuaron's suicide, Sharron's letter on the Tutanssess II mummy, Blasphemer Amon arrives in Backlund hunting believers of The Fool, Arrodes interrogates the Chained God and the Mother Tree of Desire, the Pritz Harbor heist under demigod noses, the soil-into-Groselle's-Travels trick, Sharron's letter on Spirit World Plunderers and Calderón City, the Red Gloves meeting and Amon stealing Zatwen's glove.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
-        availability: "Script ready · audio pending"
+        availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-12",
+        label: "Part 12 \u2014 Peringatan & Probe Daly",
+        file: "data/lotm-vol4-recap-12.js?v=20260913-part12",
+        description: "12-scene canonical (ch. 887-900): Will Auceptin warns Amon hates the True Creator while Ouroboros stays loyal, the Black Emperor-pathway demigod at Veterans Mess, Richardson volunteers Dutanese, Arrodes on the Mother Tree of Desire, Ignore Him warning to the Tarot Club, Roselle diary Neither answer on the soul homeland, Calder\u00f3n City commission and the ancient wraith, Hvin Rambis and Qonas Kilgor named, mausoleum hair-plants, Danitz meets Anderson Hood in Behrens, Leonard stares on airship 1345, Daly probes Dantes plus Azik letter on Spirit World Plunderers and Aiur Moria, Colin tests The Fool ritual, Berserk Sea spirit world, Black Emperor vs Pritz, and the Ferryman boat.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
       }
     ]
   }
