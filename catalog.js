@@ -214,7 +214,7 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol4-recap-10",
         label: "Part 10 — Bisnis Baru & Laporan ke Atasan",
-        file: "data/lotm-vol4-recap-10.js",
+        file: "data/lotm-vol4-recap-10.js?v=20260913-canonfix-1",
         description: "12-scene canonical (ch. 857-870): the Cuarón trap and the mastermind behind Baron Syndras, the 15,000-pound charity donation and the Loen Charity Bursary Foundation, the runaway-horse assassination attempt on Macht, the mushroom negotiations with Creeping Hunger, the charity party where Mr. World and Miss Justice finally stand in the same hall, Earl Hall's 10,000-pound check, the Roselle diary 'Home' (故乡) pages and Bernadette's protective symbols, the Tarot Gathering revelation that Dwayne Dantès is a shared identity, and the mirror-exorcism of the Marauder demigod rat.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
