@@ -223,7 +223,7 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol4-recap-11",
         label: "Part 11 — Amon Datang & Pencurian Mumi",
-        file: "data/lotm-vol4-recap-11.js?v=20260913-part11-audit",
+        file: "data/lotm-vol4-recap-11.js?v=20260913-part11-flow",
         description: "12-scene canonical (ch. 871-886, ~49 min): the charred Marauder-demigod rat and Arrodes's silver lightning, Dantès takes the bursary foundation director seat with two reform proposals, Vice Admiral Iceberg briefs Danitz on West Balam, Daly mediumship plus Leonard cracks the frame-up logic behind Cuaron's suicide, Sharron's letter on the Tutanssess II mummy, Blasphemer Amon arrives in Backlund hunting believers of The Fool, Arrodes interrogates the Chained God and the Mother Tree of Desire, the Pritz Harbor heist under demigod noses, the soil-into-Groselle's-Travels trick, Sharron's letter on Spirit World Plunderers and Calderón City, the Red Gloves meeting and Amon stealing Zatwen's glove.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
