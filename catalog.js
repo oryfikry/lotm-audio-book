@@ -232,7 +232,7 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol4-recap-12",
         label: "Part 12 \u2014 Peringatan & Probe Daly",
-        file: "data/lotm-vol4-recap-12.js?v=20260913-part12-patch",
+        file: "data/lotm-vol4-recap-12.js?v=20260914-part12-restyle",
         description: "12-scene canonical (ch. 887-900): Will Auceptin warns Amon hates the True Creator while Ouroboros stays loyal, the Black Emperor-pathway demigod at Veterans Mess, Richardson volunteers Dutanese, Arrodes on the Mother Tree of Desire, Ignore Him warning to the Tarot Club, Roselle diary Neither answer on the soul homeland, Calder\u00f3n City commission and the ancient wraith, Hvin Rambis and Qonas Kilgor named, mausoleum hair-plants, Danitz meets Anderson Hood in Behrens, Leonard stares on airship 1345, Daly probes Dantes plus Azik letter on Spirit World Plunderers and Aiur Moria, Colin tests The Fool ritual, Berserk Sea spirit world, Black Emperor vs Pritz, and the Ferryman boat.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
