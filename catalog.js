@@ -237,6 +237,24 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-13",
+        label: "Part 13 \u2014 Peringatan Leonard & Jalur Makam",
+        file: "data/lotm-vol4-recap-13.js",
+        description: "6-scene canonical (ch. 901-906, ~45 min): Azik's copper-whistle projection divination and the mutated paper figurine, Colin vs the feathered former Chief, Alger's Sonia wine visit and the cellar whispers controlling Artisan Cielf, the scholar-type bishop and Anderson's two-year reading list, the scarfed passenger and Ince Zangwill's trail on Waypoint Island, Leonard's warning and the 0-08 hint.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-14",
+        label: "Part 14 \u2014 Umpan Winner & Panggilan Mausoleum",
+        file: "data/lotm-vol4-recap-14.js",
+        description: "6-scene canonical (ch. 907-914): coffin-city Kolain and the first marionette Oaf, the Ulika raid at 13 Canine Street with Soest's grade-1 sunlight, capturing Enzo the Winner via Flesh Bomb, the Monster pathway lore (Sequence 9 Monster to Sequence 5 Winner), the self-viewing strange scene plus Artisan Cielf's origins, Azik sealing Creeping Hunger, Ludwell's one-year marionette oath, and the calling deep inside the mausoleum.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
       }
     ]
   }
