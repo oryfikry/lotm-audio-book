@@ -255,6 +255,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-15",
+        label: "Part 15 \u2014 Kota Calder\u00f3n & Tubuh Jiwa Sejati",
+        file: "data/lotm-vol4-recap-15.js",
+        description: "8-scene canonical (ch. 915-929): Azik's past life as Baron Lamud and the feathered serpent other-self, the three choices and golden-bird soul split, the 0-17 Angel of Concealment telegram, Dantes meets Leonard and Pallez with Fate Siphon charm, Calderon City origins under Death Gregrace, the Sea God domain ritual with mushroom and fish, Groselle's rescue and Cattleya's letter, the rotating-city raid vs Spirit World Plunderer, and the True Soul Body kill for the Bizarro Sorcerer ritual.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
       }
     ]
   }
