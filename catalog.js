@@ -264,6 +264,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol4-recap-16",
+        label: "Part 16 \u2014 Pentas Akhir Revival Square",
+        file: "data/lotm-vol4-recap-16.js",
+        description: "9-scene canonical (ch. 930-946): Ince Zangwill possessed by the Red Angel evil spirit, the Goddess revelation and Fate Siphon charm, Derrick's Nois City bait with the Spirit World Plunderer soul, Arrodes and Will Ceres naming Medici, Leonard and Daly's Hunter-path deduction, Anderson's chrysalis and Ouroboros at Cookawa, the deity's curse of Misfortune, the Fate swap via Creeping Hunger and Lightning Storm, and Klein's Bizarro Sorcerer advancement dance with Dunn.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
       }
     ]
   }
