@@ -275,5 +275,20 @@ window.LOTM_CATALOG = [
         availability: "Script ready \u00b7 audio pending"
       }
     ]
+  },
+  {
+    id: "vol-5",
+    label: "Volume 5 \u2014 Red Priest",
+    parts: [
+      {
+        id: "lotm-vol5-recap-1",
+        label: "Part 1 \u2014 Kunjungan Pulang & Kastil Kuno",
+        file: "data/lotm-vol5-recap-1.js",
+        description: "8-scene canonical (ch. 947-960): Mr. A's death and the East Borough murder, Audrey's therapy of Gehrman Sparrow and the transmigrator hypothesis, Xio's witness quest for the MI9 confession, Sharron's secret-guard deal, the drawing of the Black Emperor card and the exiled ancients, Groselle's small world with its black door, the strange abandoned castle of Nast the sage-artisan, doors and dreams in Backlund, and the Tarot Club labeling of Tinder plus Adam one step from the divine throne.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
+      }
+    ]
   }
 ];
