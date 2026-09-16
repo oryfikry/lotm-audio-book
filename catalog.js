@@ -297,6 +297,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-3",
+        label: "Part 3 \u2014 Zealot, Khotbah & Parasite",
+        file: "data/lotm-vol5-recap-3.js",
+        description: "10-scene canonical (ch. 974-983): Hvin Rambis infiltrates Audrey's mind world and plants hypnosis, Dwayne Dantes returns to Backlund, Patrick Bryan of the Numinous Episcopate receives the Artificial Death revelation, Klein's first sermon on literacy, the Trissy contact via rat puppet and the feathered-serpent gift, Leonard on parasite targets with Pallez, Hazel's decision, and the Bizarro Sorcerer vs Marauder Parasite battle ending with Amon's avatar.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
       }
     ]
   }
