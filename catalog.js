@@ -288,6 +288,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-2",
+        label: "Part 2 \u2014 Peringatan Adam & Malaikat Baru",
+        file: "data/lotm-vol5-recap-2.js",
+        description: "13-scene canonical (ch. 961-973): the Tarot warning about Adam and the Red Angel return, Pallez on Medici's death and the Blood Emperor, the arms deal and the sprung crisis, the railway ride and the Revelation doll, the angel's descent and Duke Olmer's Rose School mission, Audrey's donation talent and the Dreamwalker formula, the Black Emperor's restraint and Nast's memories of Roselle, and the new twelve-winged angel before Hvin Rambis.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready \u00b7 audio pending"
       }
     ]
   }
