@@ -309,18 +309,18 @@ window.LOTM_CATALOG = [
       },
       {
         id: "lotm-vol5-recap-4",
-        label: "Part 4 — Operasi Gabungan & Mentor Alger",
+        label: "Part 4 — Respon Aktif, Operasi Gabungan & Berkah Kerahasiaan",
         file: "data/lotm-vol5-recap-4.js",
-        description: "10-scene canonical (ch. 984-993): Klein war angel protection after Amon encounter, covert alliance with Pallez Zoroast via Leonard, full Tarot gathering with Emlyn Sanguine test confession and warehouse clearance, joint operation against Ernes Boyar, Alger mentors on Hvin Rambis and Psychology Alchemists, Arianna Servant of Concealment brings Evernight coat of arms, Arrodes congratulates on recovered authority and reveals Zaratul has vanished, Scholar of Yore paths and paralysis bullets.",
+        description: "Full-flow rewrite 10 scene (ch. 984-993, 1 scene per bab): Red Priest card plus Paper Angel war-shield after the Amon encounter, secret conclave with Leonard and Pallez Zoroast plague-like parasitism lecture, Tarot Gathering with warehouse clearance and Emlyn's Sanguine test confession, four-step deception joint operation against Ernes Boyar by mentor Alger, Audrey inner-fear talk, Will Auceptin dream and unanswered ritual, Arianna Servant of Concealment with the Evernight emblem, Arrodes fireworks revealing Zaratul's disappearance and Control Spirit Bullets.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol5-recap-5",
-        label: "Part 5 — Gambling God Dwayne & Eliminasi Avatar Amon",
+        label: "Part 5 — Dewa Judi Dwayne & Eliminasi Avatar Amon",
         file: "data/lotm-vol5-recap-5.js",
-        description: "12-scene canonical (ch. 994-1008): Leonard receives Klein letter on Blessed Concealment and Fate plus Flaring Sun Charm plan, Emlyn traces Rose School of Thought via Ian Wright, Dwayne Dantes becomes Gambling God at Texas Hold'em with Admiral Amyrius and Qonas Kilgor, Tarot Club joint operation forces Ernes Boyar into Gereja Ibu Bumi, Klein detects Amon disguised as rat entering 39 Boklund, four-movement confrontation with Amon avatar ending with Will Auceptin Snake of Fate Reboot and Leonard Clock of Reincarnation, and Audrey heals Parasite victims.",
+        description: "Full-flow rewrite 15 scene (ch. 994-1008, 1 scene per bab): Reinette letter on Blessed of Concealment and Fate, Emlyn recruits Ian Wright for Ernes Boyar and Rose School of Thought, conjoined Cielf in Bayam, Gambling God Dwayne wins blind at Texas Hold'em against Admiral Amyrius and Qonas Kilgor, Saint Hierländ Square punishment operation from First Movement to Ritornello forcing Ernes Boyar into Harvest Church, gray-rat Amon at 39 Boklund, four-movement battle where Amon steals six powers before Will Auceptin's Reboot and Leonard's stone-clock banishment, Audrey heals the parasitized, Worms of Time split for Arianna and Pallez, and the hidden Jacob family treasure.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
