@@ -306,6 +306,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready \u00b7 audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-4",
+        label: "Part 4 — Operasi Gabungan & Mentor Alger",
+        file: "data/lotm-vol5-recap-4.js",
+        description: "10-scene canonical (ch. 984-993): Klein war angel protection after Amon encounter, covert alliance with Pallez Zoroast via Leonard, full Tarot gathering with Emlyn Sanguine test confession and warehouse clearance, joint operation against Ernes Boyar, Alger mentors on Hvin Rambis and Psychology Alchemists, Arianna Servant of Concealment brings Evernight coat of arms, Arrodes congratulates on recovered authority and reveals Zaratul has vanished, Scholar of Yore paths and paralysis bullets.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
