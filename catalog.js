@@ -315,6 +315,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-5",
+        label: "Part 5 — Gambling God Dwayne & Eliminasi Avatar Amon",
+        file: "data/lotm-vol5-recap-5.js",
+        description: "12-scene canonical (ch. 994-1008): Leonard receives Klein letter on Blessed Concealment and Fate plus Flaring Sun Charm plan, Emlyn traces Rose School of Thought via Ian Wright, Dwayne Dantes becomes Gambling God at Texas Hold'em with Admiral Amyrius and Qonas Kilgor, Tarot Club joint operation forces Ernes Boyar into Gereja Ibu Bumi, Klein detects Amon disguised as rat entering 39 Boklund, four-movement confrontation with Amon avatar ending with Will Auceptin Snake of Fate Reboot and Leonard Clock of Reincarnation, and Audrey heals Parasite victims.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
