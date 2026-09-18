@@ -333,6 +333,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-7",
+        label: "Part 7 — Reruntuhan No. 1, Pemurni Kuat & Jadilah Terang",
+        file: "data/lotm-vol5-recap-7.js",
+        description: "14-scene canonical (ch. 1023-1036, 1 scene per bab): Viscount Stratford's final words explode into a blood-red firework, Klein concludes King George III III stands behind the Great Smog, Arrodes maps Earl of The Fallen's full arsenal, the Maygur Manor demigod battle of random anomalies ends with Parasite and Deceit bullets, the soul interrogation reveals Ruins No. 1 of the Blood Emperor under Sterlewen with Prince Grove and Duchess Georgina, the joint three-archbishop raid with Arianna returns empty and Klein theorizes the ruins are imagined, the Unshadowed Crucifix opens a screen to the City of Silver Creator with Let There Be Light and the word Mysteries, Audrey receives the George III report, and Roselle's diary page exposes the Spectator's godhood ritual: making the era follow one's expectations.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
