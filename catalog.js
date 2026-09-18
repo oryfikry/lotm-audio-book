@@ -324,6 +324,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-6",
+        label: "Part 6 — Peringatan Roselle, Pawai Perang & Maygur Manor",
+        file: "data/lotm-vol5-recap-6.js",
+        description: "14-scene canonical (ch. 1009-1022, 1 scene per bab): Pallez names the giant serpent as Sequence 1 Snake of Fate under Mr. Fool, Emlyn flexes viscount rank on Ernes, Bernadette reveals nine Black Emperor mausoleums and Roselle's warning to beware the Spectator, Klein's Yesterday Once More charm confirms his transmigration cocoon above the light door, club-wide growth (Fors Scribe, Alger Sequence 6, Derrick Priest of Light ritual, Cattleya hidden demigod), Audrey tasked to map nobles' war stance as March of War looms, Numinous Episcopate ritual to heal angel Haiter, Maygur Manor opening hunt with secret-departing Qonas Kilgor tailing into the Tussock south bank, Xio reunites with Sherman now Shermane, and the bronze cross trap devours Trissy before the loyalty answer: His Majesty.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
