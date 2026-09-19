@@ -87,12 +87,12 @@ window.LOTM_CATALOG = [
       {
         id: "lotm-vol3-recap-5",
         label: "Part 5 — The Hermit",
-        file: "data/lotm-vol3-recap-5.js?v=resume-20260910-1555",
+        file: "data/lotm-vol3-recap-5.js?v=resume-20260919-1504",
         description: "Revised 35-scene cut: Cattleya joins the Tarot Club as The Hermit, Roselle's Outer Deities diary, the sunken pyramid and Card of the Tyrant, and the Black Tulip standoff.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioBase: "audio/lotm-vol3-recap-5",
         audioAvailable: false,
-        availability: "Audio 17/35 · quota pending"
+        availability: "Audio ready · 35 scenes"
       },
       {
         id: "lotm-vol3-recap-6",
@@ -339,6 +339,15 @@ window.LOTM_CATALOG = [
         label: "Part 7 — Reruntuhan No. 1, Pemurni Kuat & Jadilah Terang",
         file: "data/lotm-vol5-recap-7.js",
         description: "14-scene canonical (ch. 1023-1036, 1 scene per bab): Viscount Stratford's final words explode into a blood-red firework, Klein concludes King George III III stands behind the Great Smog, Arrodes maps Earl of The Fallen's full arsenal, the Maygur Manor demigod battle of random anomalies ends with Parasite and Deceit bullets, the soul interrogation reveals Ruins No. 1 of the Blood Emperor under Sterlewen with Prince Grove and Duchess Georgina, the joint three-archbishop raid with Arianna returns empty and Klein theorizes the ruins are imagined, the Unshadowed Crucifix opens a screen to the City of Silver Creator with Let There Be Light and the word Mysteries, Audrey receives the George III report, and Roselle's diary page exposes the Spectator's godhood ritual: making the era follow one's expectations.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-8",
+        label: "Part 8 — Masalah Gehrman, Dreamwalker & Ujian Audrey",
+        file: "data/lotm-vol5-recap-8.js",
+        description: "14-scene canonical (ch. 1037-1050, 1 scene per bab): The Tarot Club learns Silver City may hold an adult mind-dragon brain for Audrey's Dreamwalker potion, Gehrman's Church of Evernight intel exposes George III and a traitor among the three Churches' upper echelons, Pallez confirms the Angel King Adam seized the second Blasphemy Slate, Derrick reports the Creator's relic to Colin Iliad, Sharon reveals Reinette Tinekerr is her angel mentor, the Sanguine hunt targets the Rose School stronghold and Lilith's sacred artifact, Trissy discovers Gehrman's messenger is an angel, Xio baits the king's faction inside a controlled dream, and Hvin Rambis hypnosis ambush on Audrey reverses into her own trap via the Fate Siphon charm, Manor Under the Moon, and a burning feather - ending with Gehrman Sparrow arriving under a giant red moon.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
