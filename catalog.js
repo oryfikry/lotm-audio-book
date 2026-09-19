@@ -360,6 +360,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-10",
+        label: "Part 10 — Pengembara Kosmos, Hall of Truth & Empat Pilihan",
+        file: "data/lotm-vol5-recap-10.js",
+        description: "14-scene canonical (ch. 1065-1078, 1 scene per bab): Mobet Zoroast unrolls the Solomon Empire's history - Worm of Time, the three ducal families, Bethel Abraham's cosmos travels and its three laws - while the elf dream reveals King Soniathrym's betrayal charge against Aurmir and the deaths of the ancient gods' supporters including Salinger and Auernia. The expedition crosses the collective unconscious sea, finds sunken Liveseyd - possibly imagined twice - enters the Hall of Truth where thoughts echo aloud, discovers 0-08's feather quill murals, and is repelled by the bronze door behind the throne where countless eyes open. Arianna-verified secrets, Arrodes confessing it came from underground, Dorian's Traveler inheritance for Fors, Botis stalking Backlund, and Derrick choosing among four Sealed Artifacts round out the part.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
