@@ -351,6 +351,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-9",
+        label: "Part 9 — Naga Spectator, Presiden & Mimpi Zaman Kuno",
+        file: "data/lotm-vol5-recap-9.js",
+        description: "14-scene canonical (ch. 1051-1064, 1 scene per bab): Hvin Rambis unleashes his incomplete Mythical Creature dragon form but falls into Klein's prepared trap - Lightning Storm, Slow, double Magnify through marionette Qonas Kilgor, and Control Spirit Bullets defeat the Mind Plague he planted, making the demigod a marionette. Arianna's interrogation extracts the three great contracts limiting kings, the tide-trend of world war pushed by the Twilight Hermit Order, and the identity of the Psychology Alchemists' president: Pirate King Barros Hopkins. The Manipulator characteristic becomes Audrey's Dreamwalker potion, the Botol Perbudakan mutates, the Sanguine raid hits an empty trap under a corrupted Blood Moon authority, and the first Groselle's Travels dream expedition meets hermit Snowman, the eight King of Angels canon, and Mobet Zoroast in the Fourth Epoch.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
