@@ -369,6 +369,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-11",
+        label: "Part 11 — Malaikat yang Kembali, Perang & Orang Konyol",
+        file: "data/lotm-vol5-recap-11.js",
+        description: "14-scene canonical (ch. 1079-1092, 1 scene per bab): Silver City trades for the Creator's Unshadowed Crucifix as Colin accepts his punishment, Life's Cane turns Dwayne Dantes' garden into a midnight forest tended by faceless gardeners, and Klein discovers his Bizarro Sorcerer acting key - horror film director. The fake Angel Embrace ritual lets Klein impersonate the sleeping Artificial Death, only for Sauron Einhorn Medici to return as a Gatekeeper assistant. Klein makes pirates his first horror film cast just as Feysac's air fleet bombs Backlund and the kingdom declares war. A parlor conversation with the Red Angel exposes George III's Black Emperor mausoleum plan and the seven gods' ambiguous stance, the war claims Melissa's university, Klein stars as the midnight Gardener healing hospitals, an Iron-blooded Knight admiral flees after a faceless knock, and Bernadette Gustav agrees to ally with Gehrman Sparrow against George III - two fools against the tide.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
