@@ -387,6 +387,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-13",
+        label: "Part 13 — Perburuan Putri, Nenek Moyang & Aula Raja",
+        file: "data/lotm-vol5-recap-13.js",
+        description: "14-scene canonical (ch. 1107-1120, 1 scene per bab): Gehrman Sparrow isolates Vice Admiral Ailment Tracy aboard the Black Death and learns the target is Katarina - her own mother who was once her father; a midnight stakeout at Bell of Order ends with the Red Angel slaughtering Katarina inside the mirror world while Klein watches, and the soul-channeling of the surviving Demoness reveals the eight mausoleums guarded by Hand of Order William I and Balancer Dlink Augustus plus the Red Priest Conqueror characteristic. The Silver City expedition enters Giant King Court - two Silver Knight demigods guard the gate, the Waning Forest yields giant ghost Aurmir and human-sized skeletons of the Giant King's parents, Joshua self-strangles under True Creator's watching gaze, and the blood-red table hall exposes the eleven-member Rose Redemption including six of today's seven gods. Court Chaser leader Light Culler Murskogan awakens before the sealed door of sleeping Lord Sasrir.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
