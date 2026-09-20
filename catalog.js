@@ -396,7 +396,16 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
-      }
+      },
+      {
+        id: "lotm-vol5-recap-14",
+        label: "Part 14 — Kematian Pemburu, Jamur Frank & Pintu dari Segala Pintu",
+        file: "data/lotm-vol5-recap-14.js",
+        description: "14-scene canonical (ch. 1121-1134, 1 scene per bab): Light Culler Murskogan falls as Colin Iliad breaks the life-bound statues, dying with a final cry of 'Raja...' while his soul gifts Klein the Silver Knight ritual from the first Blasphemy Slate and the truth that the door never opened after Sasrir entered; Chief Colin asks Derrick's opinion for the first time and warns 'Hati-hati dengan Lovia.' Amon grazes Hazel on Böklund Street while his familiars whisper 'Untuk Parasit... Untuk Bukan Parasit'; Will Auceptin explains the three ways to accommodate a Uniqueness; Klein pays for Scholar of Yore ingredients with Life's Cane; Hounds of Fulgrim wag their tails and offer their own eyes - revealing Sefirah Castle is the gray-fog space itself. Emlyn joins Utravsky in 'perlindungan tahanan'; Frank Lee's eleven edible mushrooms reach Silver City for the price of the Classical Metallurgist formula; the Tarot Club learns Rose Redemption was co-founded by Goddess Evernight Amanises and that humans are the ancestors of giants. On the full moon, Trissy contacts Mr. Door - the Great Door of All Doors - who reveals the secret mausoleum symbol mixing the blood of all twenty-two pathways, and a liberation ritual demanding demigod sacrifices from Seer, Apprentice, and Marauder.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
