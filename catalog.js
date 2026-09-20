@@ -378,6 +378,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol5-recap-12",
+        label: "Part 12 — Empat Kemungkinan, 1368 & Nubuat Bulan",
+        file: "data/lotm-vol5-recap-12.js",
+        description: "14-scene canonical (ch. 1093-1106, 1 scene per bab): Gehrman Sparrow and Queen Mystic Bernadette forge a secret alliance with four paths against George III - sabotage, assassination, Roselle's revival, or inaction - and the Tarot Club learns the Spectator prophecy: Adam's potion ritual brews whenever the era follows his imagination, and the world war is his design. Derrick's team departs for Afternoon Town as Elder Lovia covets the Creator's crucifix; Xio collects her MI9 bounty while the gold-masked agent reveals the Church of Evernight secretly consented; Bartz is captured twice by the hunter duo who then obtain the mirror-contact to Vice Admiral Ailment. Audrey hypnosis-erases six hours on Theros as her contribution, then heals the mad Mythical Creature demigod Lucca Brewster who reveals the Knowledge God's prophecy of apocalypse in year 1368. Roselle's complete diary exposes his Knowledge Emperor ascension, the red moon landing plan, the second Blasphemy Slate contradiction, and the unnamed island of cosmic corruption as the ninth mausoleum - and Bernadette agrees: two fools against the tide.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
