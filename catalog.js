@@ -418,6 +418,7 @@ window.LOTM_CATALOG = [
     ]
   },
   {
+    id: "vol-6",
     volume: "Volume 6",
     label: "Volume 6 — Lightseeker",
     parts: [
