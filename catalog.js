@@ -416,5 +416,20 @@ window.LOTM_CATALOG = [
         availability: "Script ready · audio pending"
       },
     ]
+  },
+  {
+    volume: "Volume 6",
+    label: "Volume 6 — Lightseeker",
+    parts: [
+      {
+        id: "lotm-vol6-recap-1",
+        label: "Part 1 — Parasit, Error & Chernobyl",
+        file: "data/lotm-vol6-recap-1.js",
+        description: "Volume 6 opening - 16-scene canonical (ch. 1151-1166, 1 scene per bab): Amon's deep parasitization leaves Klein a statue in his own body; the deal for Sefirah Castle is exposed as a trap - agreeing means Klein must personally grant permission above the gray fog, and the 'agreement' itself is the switch. Amon steals the day of the god-warring ruins, drags Klein through dream short-cuts past the golden sea of the Ancient Sun God's final dream, and enters the Forsaken Land of the Gods - where the real body has been waiting all along. Klein's escape attempts stack hope upon heartbreak: the 100-marionette Reinette gamble, throwing Master Key and Scarlet Lunar Corona into Mr. Door's light door, the queue-memory trick that summons Zaratul in one try, Arianna's bone sword, and five angel projections raining on Amon - all stolen and redirected onto Medici's knight by a clock of Worms of Time. Meanwhile Silver City loses prayer contact, Queen Mystic's Clairvoyant reads 'darkness devours light, only a sliver of hope remains', and the walk ends at a buried white building whose ancient name Amon stole from Earth: Chernobyl.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+    ]
   }
 ];
