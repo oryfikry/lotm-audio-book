@@ -406,6 +406,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol5-recap-15",
+        label: "Part 15 — Scholar of Yore & Ritual Black Emperor (Final)",
+        file: "data/lotm-vol5-recap-15.js",
+        description: "Final part of Volume 5 - 16-scene canonical (ch. 1135-1150, 1 scene per bab): Frank Lee's mushrooms feed all of Silver City while Klein finishes digesting the Bizzaro Sorcerer potion; Arrodes reveals Sefirah Castle is one of nine entities left by the original Creator and Sasrir was born from the Ancient Sun God's rib. On a deserted Berserk Sea island Klein brews and drinks the Scholar of Yore potion, journeying through the mist of history past every era back to the meadow where Giant King Aurmir buried his parents - and the word 'Sefirah Castle' echoes through Amon's monocular, the Abraham apartment, and old Pallez Zoroast. Klein forges his honorific name, loans the Master Key from the Historical Void, collects blood from Sharron, and with Trissy's Shermane blood completes all twenty-two pathways. A divination screams danger - he cancels the Mr. Door ritual - but 0-08, pulled from the Historical Void, writes the 'natural development' that baits nobody: George III swaps himself with an illusion mid-speech and drinks the Black Emperor potion in Ruins No. 1. Three arrows fire at once - Death Consul Azik's projection, Klein under the Tussock River, Trissy at Ruins No. 1, Queen Mystic wielding 0-05's second wish - until Zaratul's true body springs the real trap and Adam appears inside the Hall of Truth asking whether Klein can accept a world war. George III explodes on the podium, Trissy smothers the chaotic shadow with serpent hair, Klein outruns the tide of Zaratul's transparent worms through eras of history, and Arianna's real body buys him his escape - only for the lost puppet Enuni to be sitting in his hotel room, crystal monocle rising to its eye. Amon. (End of Volume 5 - Red Priest.)",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
