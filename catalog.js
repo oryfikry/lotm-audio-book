@@ -449,6 +449,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-4",
+        label: "Part 4 — Kotak yang Tidak Menguntungkan",
+        file: "data/lotm-vol6-recap-4.js",
+        description: "16-scene canonical (ch. 1199-1214, 1 scene per bab): Box of the Great Old Ones kills its own master - Botis dies before the third level, eyes frozen in terror, and Cattleya sacrifices the Class-0 artifact to Mr. Fool in ten seconds. Klein decodes the box (24-hour toy curse, random Exile recordings, 'do not ask, describe, or touch'), numbers it 0-61, and the loot split hands Fors Botis's eyes, Xio the Traveler's Bag, and Cattleya the Secrets Sorcerer characteristic. Backlund's four demigods find the Hermit card and name the tarot-code organization 'Klub Tarot' - Leonard leads the hunt while Kisma repents and Dorian Gray learns his student's circle killed the Saint. Then the true body: Amon springs the Jacob-vault trap after 1,000 years, takes Pallez Zoroast's Sequence-1 characteristic, and slips out under the Lord of Storms' thunderfall through the death-cathedral door - the godhood ritual 'to replace another' begins. Dorian wagers his life on faith; the red moon passes silent, Planeswalker is traded, and its advancement ritual demands legends left in nine places beyond the planet. In the Forsaken Land, Moon City's hunters meet a lantern-carrying 'missionary': Unshadowed Crucifix and Life's Cane purge generations of poison, the 3,722-year vigil of the white-gray mist is revealed, and the ritual finally answers - a thousand voices calling 'The Celestial Worthy of Heaven and Earth for Blessings'.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
