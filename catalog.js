@@ -458,6 +458,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-5",
+        label: "Part 5 — Tirai dan Kota Jamur",
+        file: "data/lotm-vol6-recap-5.js",
+        description: "16-scene canonical (ch. 1215-1230, 1 scene per bab): The chant from behind the fog turns out to be the last line of Klein's own transmigration mantra - The Celestial Worthy of Heaven and Earth for Blessings, suspected former owner of Sefirah Castle - yet the barrier only ripples: the apocalypse has not arrived, one decade remains. Moon City becomes a congregation; a missionary grills mushrooms by the fire; High Priest Nim recalls a demonic wolf that vanished the very day Klein transmigrated (28 June 1349), and a divination reveals the 'curtain' - the long-lost Attendant of Mysteries characteristic - now worn by Dark Demonic Wolf Kotar, who is preparing his Sequence-1 ritual with a marionette city. Klein teleports a projection to Chernobyl's sealed research facility, learns the world died from oil-field corruption and the Chaos Sea below, and meets an 'independent' Amon avatar whose gift of secrets (Blasphemy Slate 1's birthplace, Transcending Sequences, Great Old Ones, Outer Deities, Kosmos) is really a trap that drags the blood moon's gaze onto him - the moon turns white, the apocalypse clock is real, and Audrey must hypnotize the knowledge away from both of them. Derrick drinks the Unshadowed potion as Audrey severs and returns his strongest emotions - and legendary daylight falls on the City of Silver. Emlyn hires The World to decoy a Rose School of Thought trap; Alger is cleared for his Cataclysmic Interrer ritual; and the Tarot Club's collective wisdom ends on a chilling gambit: bait a paranoid god by making yourself perfect, helpless prey.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
