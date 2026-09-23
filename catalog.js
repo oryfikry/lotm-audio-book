@@ -431,6 +431,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-2",
+        label: "Part 2 — Jangkarku & Kebangkitan",
+        file: "data/lotm-vol6-recap-2.js",
+        description: "16-scene canonical (ch. 1167-1182, 1 scene per bab): Amon's Chernobyl reveal detonates Klein's greatest realization - this world IS Earth, the stars are wrong, and 'beware the moon' was never a random prophecy - and the moment his relationship with Sefirah Castle deepens, Amon springs the true trap: the whole journey was a gift of time to digest the potion, and the 'body' that walked beside Klein all along was another puppet. Bladel's twilight sword and the Goddess's secret grip on Artificial Death slam the gray-fog door shut; Klein reaches Sefirah Castle, kills himself with Sea God lightning, and claims 'Inilah jangkarku' - one resurrection left, three days to escape. The Tarot Club reunion reads every truth wrong in the right direction; George III's death is explained as seven gods' silent consent vetoed by Mr. Fool; the hunting party for Saint of Secrets Botis assembles (Cattleya, Fors the bait, Audrey if she digests Dreamwalker); Colin Iliad becomes Silver Knight under The Fool's blessing; a Deceit bullet plus the Castle's angel-level power fools the rules into a fake respawn point - Derrick's vial births Gehrman Sparrow anew. Will Auceptin's silver snake exposes the six-Miracle-Invoker quota and the vanished third Attendant of Mysteries; Aurora Order enters the agenda again; and in the dead theater of ancient Nois, Angel of the Evil Word Steph answers words with words - until 'Leodero!' - and a charred corpse rises wearing a crystal monocle on the wrong eye: 'Maaf, aku memakainya di sisi yang salah.'",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
