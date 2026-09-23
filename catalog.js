@@ -440,6 +440,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-3",
+        label: "Part 3 — Perburuan Saint of Secrets",
+        file: "data/lotm-vol6-recap-3.js",
+        description: "16-scene canonical (ch. 1183-1198, 1 scene per bab): Klein discovers his best advantage is being WEAK - bait for the Dark Demonic Wolf Kotar, whose habits the Evernight Goddess reveals while Amon haunts every hiding spot one step ahead; a Game-of-Mischief offer (trade Miracle Invoker characteristic for the Castle) is refused. Queen of Calamity Cohinem rises from a dream-song: elf blood, a demigod promise, a golden wine cup that seals the deal, and the lost Western Continent that will re-emerge at the apocalypse. The Club levels up - Fors survives the Scribe 'class' and Traveler ritual; Audrey drinks Manipulator amid ten thousand grieving hearts at Winter Gifts Day ('Susie, aku masih bisa merasakan kesedihan mereka'); Xio wears the Paranormal Court bench; Cattleya receives prepaid Mysticism. The Botis hunt assembles: a fabricated Mr. Door letter hooks Dorian Gray Abraham, Miss Magician leaks Abraham ties at gatherings, Leonard pressures Aurora Order, and Judgment pins a Prohibition - until Saint of Secrets springs the Box of the Great Old Ones, a Class-0 jewelry box from an angel who died mid-scream. Cinderella, The Little Match Girl, the Betrayal Feast, The Ugly Duckling, the Horn of Destruction, Spear of Longinus, Reboot of Fate, and Audrey's Mental Plague collide in a demonic fairytale duel - ending with Botis catching the box to open its THIRD level.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
