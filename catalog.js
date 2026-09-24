@@ -476,6 +476,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-7",
+        label: "Part 7 — Menemui Dark Angel",
+        file: "data/lotm-vol6-recap-7.js",
+        description: "16-scene canonical (ch. 1247-1262, 1 scene per bab): True Creator descends on the curtain with one word - 'Mysteries' - and plants a corruption-seed forcing Klein to open the Giant King Court palace where Dark Angel Sasrir sleeps. En route he splits the Attendant of Mysteries characteristic for his future Miracle Invoker potion, thanks the Evernight Goddess, and reacts to Danitz's panicked prayer by veiling the entire Rorsted archipelago in mist - one miracle that makes Sea King take the Rorsted self-rule offer seriously. Backlund falls into siege; Audrey walks into the war alone, Dream-Traverses the allied camp, and seeds Mental Plague among the Feysac-Intis troops. Klein buries Groselle's ashes in his old guard quarters, has puppet-Enuni unlock the Giant King's residence - and the black sea beyond cuts his own shadow from him, birthing a mutated Enuni and a shadow twin under Dark Angel's touch. The Silver Knight trio faces Enuni, a split Spectator Saint, and the mind-dragon: Colin becomes his incomplete Mythical form, Derrick answers 'Domain Unshadowed' with Flaring Sun and a Notary's decree, and Klein's stolen shadow is outplayed by its own carelessness - 'Terlalu lemah...' Enuni falls to Lovia's trap and the Sun Saint is deleted by a mutating Silver Rapier. Inside the shadow-palace the members vanish one by one until all four stand before the iron throne where Dark Angel sleeps with the first Blasphemy Slate - and his leftover soul, speaking through brass eyes, tells all: God Almighty's left hand, the Rose Redemption conspirator, and the horror that Primordial One woke inside him - 'Semakin tinggi Urutan, semakin dekat dengan Primordial One.' The awakened remnant fells Lovia with a glance, but she rasps the truth - 'Dia tidak sekuat itu!' - a soul-wraith threaded from Chaos Sea and a sliver of the Original Creator's madness; every god and King of Angels steered Klein here as the only qualified candidate. As the lightning-sea falls, Staff of the Stars replicates Amon's Time with eerie blessing, two barriers are planted - and Klein vanishes.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
