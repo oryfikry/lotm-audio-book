@@ -467,6 +467,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-6",
+        label: "Part 6 — Perburuan God of Wishes",
+        file: "data/lotm-vol6-recap-6.js",
+        description: "16-scene canonical (ch. 1231-1246, 1 scene per bab): The decoy plan is refined with Miss Messenger herself - Reinette Tinekerr will wear a peak-condition body summoned from history via the lent Staff of the Stars, while Klein harvests a second opinion: Reinette answers 'Sefirah Castle!' and Will Auceptin reminds him what Fate-pathway Beyonders see when they look at him. A controlled experiment confirms the Castle's aura can now corrode even angels who peer too closely. The double front opens: in Balam Timur the Rose School of Thought's trap springs upward - Abomination Suah, King of Angels, descends through a corpse-puppet and calls upon the Chained God, until Klein's Box of the Great Old Ones second level yeets the entire battlefield into a random desert, where four angel projections (Arianna, Azik Eggers, and a silver serpent) pin the Sequence-1 down. In Balam Barat Emlyn's Vision of White burns through Klarman's Moon Paper Figurine, Sharron possesses the ancient Shaman King and shares wounds via Source of Curses, the Pupil-less Eye puppet turns the city's glass against its masters, and Cincin Lilith summons not a spirit but a white-silver moon that severs Klarman from the red moon - Klarman dies on an Unshadowed Spear. Klein is unknowingly cursed by Suah, deduces the missing Miracle Invoker characteristic may already be in play, receives the Magic Wishing Lamp 0-05 from Bernadette as a death-bequest with a forbidden third wish, and meets its Genie - who greets the owner of Sefirah Castle, offers the Miracle Invoker characteristic plus three wishes for freedom, and shrieks 'Kau bukan Dia!' when Klein bargains. Baiting Kotar with the honorific of God of Wishes and a chorus of other gods' names, Klein dons the crystal monocle as fake Amon - and the paranoid wolf's own curiosity pins him: the Castle strikes through the staff's replicated Ancient Wall Clock, Reinette descends via a cursed coin, the curtain-kingdom severs divinity with a wish, the storm of 'Leodero!' levels the wolf-castle twice, the Pesta Pengkhianatan confuses the curtain itself, and Artificial Death's ghostly hands freeze the God of Wishes - who survives exactly as he has survived since the Second Epoch: by following his true feeling, cowardice. The twin characteristics stay behind; the True Creator descends upon the curtain, murmuring: 'Mysteries.'",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
