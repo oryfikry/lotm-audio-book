@@ -494,6 +494,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-9",
+        label: "Part 9 — Kota Aturan & Mr. Door",
+        file: "data/lotm-vol6-recap-9.js",
+        description: "16-scene canonical (ch. 1279-1294, 1 scene per bab): The Tarot Club absorbs the decade-to-apocalypse warning and realizes The World is now an angel - perhaps 'Dia' himself; Fors digests Traveler and meets Dorian for the Secrets Sorcerer ritual; Pastor Utravsky is freed and the Sanguine flock returns to the Harvest church. As the wandering magician 'Merlin Hermes' rides the Feysac invasion route to see the war's scars, the mining town of Belltaine greets him with a new consul's three laws - no one leaves, all lives equal before the law, and a death-penalty crime list that includes stealing, fraud, and speaking a god's full honorific - plus an order for citizens to capture outsiders. Four veteran Beyonders (Roy, Biles, Pasha, Phil) survive its invisible enforcer: a doctor hanged for adultery, a hand severed for theft, and Phil's arm restored by Klein's granted wish. The artifact is 0-02, the Trunsoest Brass Book - Justiciar's Uniqueness corrupted by Nation of Disorder, growing alive as its laws tighten. Klein weaponizes the law itself: grants wishes to build contradiction-Biles the dual-attribute citizen - tricks the book into revealing its enforcement body, corrupts it back through sefirot-resonance, shrinks the library with his own granted wish, forces a paradox loop with Black Emperor's Hall of Consuls until 'Semua aturan berikut ini tidak efektif' erases its second half, and has Arianna hang herself on the unpublished first clause to steal the Brass Book - trading it to the mad Half-Fool for the Fool Card of Blasphemy while the book loops forever at Hornacis. Wandering-magician wishes heal the town, the four veterans receive Merlin's name and a Pugilist potion, and Biles forgets everything under Hvin Rambis's manipulation. Above the fog Klein reads the Fool card: Attendant of Mysteries requires a puppet-city with woven fates; The Fool requires deceiving time, history, or fate itself. The Silver City scouts land in Bayam to marvel at gaslights falling like a galaxy; Fors seals a mad demigod into Devil's Oil Painting via Peach Blossom Source and the Chessboard of Time, drinks Secrets Sorcerer - and on her first full-moon contact, Mr. Door admits the terrible truth: he cannot stop screaming for help, the family curse lifts only with his escape, and the escape rituals demand three demigods of Seer, Apprentice, and Marauder - or the blood of ninety-nine Abrahams. Klein listens with Scarlet Lunar Corona and hears the scream say: 'Jangan selamatkan aku.'",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
