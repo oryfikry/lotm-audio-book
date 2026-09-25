@@ -485,6 +485,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol6-recap-8",
+        label: "Part 8 — Cahaya adalah Arti dari Segalanya",
+        file: "data/lotm-vol6-recap-8.js",
+        description: "16-scene canonical (ch. 1263-1274, plus the Volume 6 finale ch. 1265-1278 arc; 1 scene per bab): The final watch - Klein dream-forces Dark Angel Sasril asleep twice, and the plan snaps into place: Lovia sacrifices her failing body to bind the wraith, Flaring Sun purifies the shadow-palace, Lightning Storm severs the link between Sasrir and the first Blasphemy Slate, and a replicated Steal rips it free - until Sasrir's river of fate rewinds the wound. Colin dies holding the mercury siege open; Derrick's Unshadowed Spear ends the wraith; and the shadow-palace collapses, revealing Blasphemy Slate No.1 on the throne. Amon appears at the ruins and the Slate flees to him of its own will - the King of Angels has waited a thousand years for exactly this. Colin Iliad's last will: 'Gift of the Land' - the Omebella corpse IS the Silver City's divine artifact, Mother Earth is an impostor - and Derrick pushes open the blue door at last: 'Cahaya adalah arti dari segalanya' (Akhir Volume 6 - Lightseeker). Volume 7 opens: City of Silver sails to the outside world and Danitz welcomes them; Klein brews the Miracle Invoker potion with Kotar's blood, survives the worm-swarm identity crisis through the convergence of Silver City's 2,000-year history, and rises to a true angel - owner of Sefirah Castle. He learns Wishes must be collected from others first, discovers the light-door's true nature, deduces the Evernight Goddess's millennium conspiracy with the dead Ancient Sun God, and meets the Seven Lights: the Outer Deities catalogued (Mother Goddess of Depravity = Primordial Moon, Mother Tree of Desire = Father of Devil), the barrier of The Oldest One's fading will, and the truth that his mental corruption belongs to Lord of the Mysteries - The Celestial Worthy of Heaven and Earth for Blessings. Spring comes to Backlund; a melancholy conversation with Leonard ends in Dunn Smith's words. Arrodes the mirror-servant grovels at last, revealing Lilith is Mother Earth; the Goddess demands 'Lady of Crimson' be erased from canon. Klein recruits Bornova Gustav and borrows the mirror, writes to Mr. Azik, and roams the land as a wandering magician granting wishes - a father returns to hug his daughter. At the Tarot Club, Derrick detonates the truth of Mother Earth; Klein trades Sea God identity for missions; and Gehrman Sparrow closes with the warning of the decade: 'Kiamat akan tiba dalam waktu sekitar satu dekade.'",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
     ]
   }
 ];
