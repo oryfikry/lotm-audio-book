@@ -510,6 +510,16 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol7-recap-2",
+        label: "Part 2 — Mausoleum Kaisar",
+        file: "data/lotm-vol7-recap-2.js",
+        description: "28 -> 16 scene lanjutan Volume 7 (ch. 1295-1310; 1 scene per bab): Mr. Door\u2019s shifting scream teaches Klein the calm half is the mad half; Kota Constant menderita pasca-perang - Merlin Hermes memurnikan Unit 403 dan teleskop astronom amatir John yang bermutasi melihat mata di ujung kosmos; keajaiban membangun ulang rumah-rumah dan Kota Constant sendiri; Dorian vs Verdu di keluarga Abraham; Kota Perak dan Kota Bulan dievakuasi Mr. Fool ke dunia nyata - permen susu untuk putri Liaval; Bernadette mendarat di pulau primitif: makhluk-makhluk menyembah kekosongan, Edwards hidup kembali, kanopi kosong, pilar batu kehidupan baru, janin terkutuk di rahimnya; di dalam mausoleum Black Emperor - distorsi Spear of Longinus, Space Concealment dibalik pintunya, dan satu kata berbahasa Tionghoa menghentikan bayangan: Rumah; Roselle Gustav menemukan dirinya terkorupsi Primordial Moon dan memohon di segel oleh putrinya sendiri lewat Pale Death; pertemuan dua penduduk bumi - Zhou Mingrui dan Huang Tao - berakhir dengan peringatan: jangan kumpulkan dua puluh dua kartu, hati-hati kartu Mother; Bernadette menenggak ramuan Sage dan menjadi malaikat Urutan 2; Orange Light Hilarion mengungkap pelindung dunia roh: Mr. Fool; dan di Gereja Harvest, utusan Tahta Suci membawa aturan dingin untuk Emlyn: wahyu dari Leluhur itu palsu.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+
     ]
   }
 ];
