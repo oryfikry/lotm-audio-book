@@ -27,6 +27,16 @@ scripts are readable and audio is playable/downloadable per scene.
 ### Standing content rules
 - Narration language: Indonesian. Canonical LOTM terms stay English (Sequence
   names, Beyonder characteristics, pathway names, org names).
+- **Volume boundaries are EPUB facts, not folder names (rule added 2026-09-26).**
+  Vol 6 "Lightseeker" ends ch.1266; Vol 7 "The Hanged Man" starts ch.1267 (ID EPUB
+  `0033_Chapter_1267_-1268.xhtml` carries the volume header). Part-series naming
+  (`vol-6-part-N`, label "Volume 6 — Part N") is the channel's own sequence and
+  CAN cross real volume boundaries: part 8 of the vol-6 series (ch.1263–1274)
+  spans it, and its successor (lotm-vol6-recap-9, ch.1279–1294) is entirely
+  Volume 7 — now relabeled "Part 1" inside catalog.js's `vol-7` group. Before
+  naming/labeling any new part, verify its volume against the EPUB; if a part
+  crosses a boundary, create the next volume's catalog group in the same commit
+  and note the boundary in the part description. Never rename deployed part ids.
 - The .srt is the user's own writing — do not rewrite, summarize, or "improve"
   it. Parse it faithfully. The only transformation allowed is splitting
   over-long blocks (section 4, step 2).

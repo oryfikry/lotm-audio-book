@@ -1,6 +1,6 @@
 window.LOTM_DATA = {
   "part": "lotm-vol6-recap-9",
-  "title": "Volume 6 — Part 9: Kota Aturan & Mr. Door",
+  "title": "Volume 7 — Part 1: Kota Aturan & Mr. Door",
   "voice": "gemini/gemini-3.1-flash-tts-preview/Puck",
   "totalMinutes": 68.3,
   "scenes": [
