@@ -527,6 +527,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol7-recap-4",
+        label: "Part 4 — Utopia & Naga Pikiran",
+        file: "data/lotm-vol7-recap-4.js",
+        description: "16 scene (ch. 1327-1342; 1 scene per bab): Klein memilih rencana kedua kota boneka - pulau tersembunyi di Laut Berserk dengan Kastil Sefirah sebagai pelindung - dan setelah menulis profil lima ribu penduduk, Utopia bangkit dalam semalam dari Katedral Saint Arianna, lengkap dengan pelabuhan yang tidak ada di peta mana pun. Mayor jenderal Alfred Hall menolak turun di pelabuhan misterius itu dan kembali dengan kabar dingin: Utopia tidak pernah tercatat di kerajaan, sementara agen MI9 Wendel tersesat ke kota yang sama lewat kereta terhenti badai, menyelamatkan Tracey dari tuduhan pembunuhan suami simpanannya, lalu membaca laporan rahasia bahwa seluruh kota itu mungkin tidak ada di dunia nyata. Investigasi MI9 di bawah Kolonel Xio menemukan pintu masuk Utopia yang bisa muncul di mana saja - hingga polisi Biles datang ke Backlund menyurati Wendel bersaksi. Di Tarot Gathering, Klein membeberkan bahwa semuanya adalah ritual; bulan darah membawa janji Wanderers dari Mr. Door untuk Fors dan mimpi rawa berdarah bagi Emlyn. Verdu Abraham mendarat di reruntuhan Pelabuhan Bansy: bola kristal yang meledak, rembesan darah, dan satu pintu kayu yang membuka kabut berisi kantor telegraph berpenghuni - hingga Gehrman Sparrow melihat kereta biru yang menyeret kepala-kepala berlumur darah. Roh jahat Red Angel Medici dan seekor gagak bermata putih merampungkan persekongkolan: menipu Verdu lewat mimpi Dewa Perang agar Mr. Door kembali. Sementara itu kolom perjalanan Charlotte/Monica memuji Utopia di surat kabar Backlund, perburuan rubah keluarga Hall tersesat ke desa pemujaan naga Hartlarkh, dan Audrey dijebak ke dalam labirin mimpi naga purba Ariehogg - salah satu dari tiga naga purba terakhir - yang tahu tentang Liveseyd dan bertanya di mana dia menemukannya, tepat ketika kelinci putih besar membuka pintu.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
 
     ]
