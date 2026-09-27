@@ -519,6 +519,15 @@ window.LOTM_CATALOG = [
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
+      {
+        id: "lotm-vol7-recap-3",
+        label: "Part 3 — Mesin Harapan & Taman Eden",
+        file: "data/lotm-vol7-recap-3.js",
+        description: "16 scene (ch. 1311-1326; 1 scene per bab): Emlyn membentuk tim Sanguine di Backlund atas permintaan Gereja Earth, sementara Alger menerima misi memantau Verdu Abraham di Bayam. Klein berakting sebagai penyihir pengembara Merlin Hermes dengan Fully Automatic Wishing Machine di Kota Limon: Jasmine, gadis yang wajahnya rusak kebakaran, memulihkan penampilan dan kesehatan orang tuanya, lalu keinginan menjadi sangat sangat sangat cantik berbalik kutukan pesona sampai dibatalkan - laporan Nighthawk Madam Grey mencatat pensiunan tentara yang menghindari pernikahan tidak diinginkan dan guru yang kebagian boneka suami sempurna. Pauli Derlau membawa Audrey ke kota pikiran Taman Eden: dewan Psychology Alchemists bergaya tujuh dosa (Audrey memakai Pride, kelinci Hermes memakai Wrath), nama Adam dijanjikan sebagai kata kunci keselamatan, dan Klein menyimpulkan Adam telah maju menjadi Visionary. Di Tarot Gathering, The Fool membuka rahasia enam jalur Beyonder yang berasal dari kosmos - Planter dan Moon dari Mother Goddess of Depravity, Criminal dan Prisoner dari Mother Tree of Desire, Lawyer serta Arbiter dari Son of Chaos; Audrey disarani menunda penyelidikan naga pikiran East Chester, Cattleya diarahkan ke Queen Mystic demi karakteristik Urutan 3, dan Frank Lee dicurigai menjadi anak angkat Outer Deities. Setengah tahun Verdu Abraham tersesat di Bayam tanpa kemajuan, dakwah The Fool makin meresap - dan pada doa jam sembilan pagi, seluruh kelainan bentuk penduduk Kota Bulan disembuhkan hingga bel bergeming. Kejutannya: sosok di menara lonceng adalah Angel of Time Amon, tersenyum lebar tanpa penjelasan.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      }
 
     ]
   }
