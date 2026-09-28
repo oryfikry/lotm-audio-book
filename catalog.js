@@ -536,7 +536,24 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol7-recap-5",
+        label: "Part 5 — Katedral Mayat & Sang Pilar",
+        file: "data/lotm-vol7-recap-5.js",
+        description: "16 scene (ch. 1343-1358; 1 scene per bab) - penutup Volume 7: Mr. Wrath menenun mimpi buruk Ancient Sun God untuk melawan naga purba Ariehogg, dan jawaban naga itu mengubah segalanya - 'Adam belum tentu Adam'. Gehrman Sparrow yang diberi kemanusiaan menikam Klein, katedral mayat Adam menyelimuti Kastil Sefirah, dan Zaratul bersekutu dengan Adam menyerang Utopia hingga semua boneka membeku. Di dalam kerajaan ilahi sang Visionary, Klein membaca Blasphemy Slate kedua: Tiga Pilar - God Almighty, Lord of the Mysteries, Mother Goddess of Depravity - dan pilar keempat tersembunyi yang menandai akhir alam semesta. Adam mengaku sebagai Ancient Sun God yang telah 'binasa saat True lahir'. Klein melancarkan kontrak dengan Jin sang Genie: dua permintaan di muka, Magic Wishing Lamp dikirim ke alam semesta sebelum 1368. Mr. Door kembali lewat Pintu Daging dan Darah dengan harga tubuh Verdu - dan ritualnya langsung dicuri Amon, yang memakai Blasphemy Slate pertama menutup invasi Mother Goddess of Depravity dan menjadi Urutan 0 Error. Klein bangkit di atas kabut, mencipta keajaiban lewat mausoleum Roselle yang terkontaminasi (sel di luar jangkauan Visionary), melangkah ke Attendant of Mysteries di badai Leodero, menelan karakteristik Zaratul untuk menekan Celestial Worthy, dan menutup Volume 7 dengan sosok tergantung terbalik di Forsaken Land of the Gods - sebelum berunding dengan Dewi Evernight merancang ritual membodohi takdir ala Antigonus. Vol 7 berakhir ch.1353; Vol 8 The Fool dimulai ch.1354 - 11 scene pertama menutup Vol 7, 5 scene terakhir membuka Vol 8.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
+
+    ]
+  },
+  {
+    id: "vol-8",
+    volume: "Volume 8",
+    label: "Volume 8 — The Fool",
+    parts: [
 
     ]
   }
