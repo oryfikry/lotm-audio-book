@@ -38,6 +38,30 @@
   "mengatakan kepada/melakukan" — ganti dengan kata hubung natural.
 - Setiap dialog langsung pakai tanda kutip; tanpa label pembicara.
 
+## AUDIT SAAT REVIEW PART YANG SUDAH DEPLOY (metode, temuan 30-Sep-2026)
+
+Saat user minta "cek part X", jangan cuma jalankan gate mekanis — gate mekanis bisa
+**PASS** pada naskah yang isinya bolong. Urutan yang terbukti menemukan cacat nyata:
+
+1. Bandingkan naskah deploy vs draft sumber (`draft.md`) per scene — apakah identik.
+2. **Rasio kata per bab**: `kata_scene / kata_bab_sumber`. Normal 0,39–0,43. Bab dengan
+   rasio ≤0,30 = ada blok yang hilang (kasus nyata: ch.1354 rasio 0,26 — blok Fors
+   [mimpi buruk + Teleportasi ke Dorian + hujan karakteristik] tidak ada di naskah).
+3. Cocokkan daftar blok/POV di bab sumber dengan scene (1 bab bisa punya 2–3 blok POV —
+   pastikan semuanya ada).
+4. `rep_gate.py` + glue sweep + `audit_part.py` + `mechanical_sweep.py` (seperti gerbang
+   di atas) — kalau PASS tapi rasio anomali, tetap laporkan.
+5. **Cek kualitas `visual_keywords`/`sound_keywords`** (lihat aturan di bawah).
+
+## KUALITAS KEYWORDS (wajib)
+
+`visual_keywords` = frasa pendek **bahasa Inggris** untuk pencarian b-roll/gambar
+(mis. `dark cathedral`, `gray fog castle`), `sound_keywords` = ambience/SFX.
+DILARANG hasil ekstraksi kata dari narasi: kata fungsi/kata Indonesia (`Aku`, `Di`,
+`Dari`, `Bagi`, `Yang`, `Tempat`), duplikat dalam satu scene, atau potongan kalimat.
+Kasus nyata 30-Sep: Vol 7 Part 1, 3, 4, 5 keyword-nya kata-sampah dari narasi
+(Part 2 benar) — perlu regenerasi per scene sebelum audio dipakai untuk b-roll.
+
 ## Referensi insiden
 
 - Vol 6 P4 fix commit `309bb84` (23-Sep): scene-002/007/016 dup dihapus, 10.935 kata ≈75,4 mnt.
