@@ -37,6 +37,15 @@ scripts are readable and audio is playable/downloadable per scene.
   naming/labeling any new part, verify its volume against the EPUB; if a part
   crosses a boundary, create the next volume's catalog group in the same commit
   and note the boundary in the part description. Never rename deployed part ids.
+- **Vol 7/8 boundary and the 2026-09-30 split.** Vol 7 "The Hanged Man" ends ch.1353 —
+  the chapter's own last line is "Akhir Volume Ketujuh—The Hanged Man"; Vol 8 "The Fool"
+  starts ch.1354 (its source file opens with the literal header `VOLUME 8: The Fool`).
+  lotm-vol7-recap-5 had shipped ch.1343–1358 as ONE 16-scene part (straddling the boundary,
+  boundary stated in its description) and was split on the user's instruction: Part 5 now =
+  11 scenes ch.1343–1353 (Vol 7 finale, 6.859 words ≈ 47,3 min) and the Vol 8 opener became
+  `lotm-vol8-recap-1` — 5 scenes ch.1354–1358 (2.888 words ≈ 19,9 min, voice Puck), the first
+  entry of the `vol-8` catalog group. No MP3 existed yet, so nothing was regenerated.
+  Rollback copy: `/var/www/yt/.rollback-20260930-vol7p5-split/`.
 - The .srt is the user's own writing — do not rewrite, summarize, or "improve"
   it. Parse it faithfully. The only transformation allowed is splitting
   over-long blocks (section 4, step 2).

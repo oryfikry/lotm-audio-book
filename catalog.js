@@ -541,7 +541,7 @@ window.LOTM_CATALOG = [
         id: "lotm-vol7-recap-5",
         label: "Part 5 — Katedral Mayat & Sang Pilar",
         file: "data/lotm-vol7-recap-5.js",
-        description: "16 scene (ch. 1343-1358; 1 scene per bab) - penutup Volume 7: Mr. Wrath menenun mimpi buruk Ancient Sun God untuk melawan naga purba Ariehogg, dan jawaban naga itu mengubah segalanya - 'Adam belum tentu Adam'. Gehrman Sparrow yang diberi kemanusiaan menikam Klein, katedral mayat Adam menyelimuti Kastil Sefirah, dan Zaratul bersekutu dengan Adam menyerang Utopia hingga semua boneka membeku. Di dalam kerajaan ilahi sang Visionary, Klein membaca Blasphemy Slate kedua: Tiga Pilar - God Almighty, Lord of the Mysteries, Mother Goddess of Depravity - dan pilar keempat tersembunyi yang menandai akhir alam semesta. Adam mengaku sebagai Ancient Sun God yang telah 'binasa saat True lahir'. Klein melancarkan kontrak dengan Jin sang Genie: dua permintaan di muka, Magic Wishing Lamp dikirim ke alam semesta sebelum 1368. Mr. Door kembali lewat Pintu Daging dan Darah dengan harga tubuh Verdu - dan ritualnya langsung dicuri Amon, yang memakai Blasphemy Slate pertama menutup invasi Mother Goddess of Depravity dan menjadi Urutan 0 Error. Klein bangkit di atas kabut, mencipta keajaiban lewat mausoleum Roselle yang terkontaminasi (sel di luar jangkauan Visionary), melangkah ke Attendant of Mysteries di badai Leodero, menelan karakteristik Zaratul untuk menekan Celestial Worthy, dan menutup Volume 7 dengan sosok tergantung terbalik di Forsaken Land of the Gods - sebelum berunding dengan Dewi Evernight merancang ritual membodohi takdir ala Antigonus. Vol 7 berakhir ch.1353; Vol 8 The Fool dimulai ch.1354 - 11 scene pertama menutup Vol 7, 5 scene terakhir membuka Vol 8.",
+        description: "11 scene (ch. 1343-1353; 1 scene per bab) - penutup Volume 7: Mr. Wrath menenun mimpi buruk Ancient Sun God untuk melawan naga purba Ariehogg, dan jawaban naga itu mengubah segalanya - 'Adam belum tentu Adam'. Gehrman Sparrow yang diberi kemanusiaan menikam Klein, katedral mayat Adam menyelimuti Kastil Sefirah, dan Zaratul bersekutu dengan Adam menyerang Utopia hingga semua boneka membeku. Di dalam kerajaan ilahi sang Visionary, Klein membaca Blasphemy Slate kedua: Tiga Pilar - God Almighty, Lord of the Mysteries, Mother Goddess of Depravity - dan pilar keempat tersembunyi yang menandai akhir alam semesta. Adam mengaku sebagai Ancient Sun God yang telah 'binasa saat True lahir'. Klein melancarkan kontrak dengan Jin sang Genie: dua permintaan di muka, Magic Wishing Lamp dikirim ke alam semesta sebelum 1368. Mr. Door kembali lewat Pintu Daging dan Darah dengan harga tubuh Verdu - dan ritualnya langsung dicuri Amon, yang memakai Blasphemy Slate pertama menutup invasi Mother Goddess of Depravity dan menjadi Urutan 0 Error. Klein bangkit di atas kabut, mencipta keajaiban lewat mausoleum Roselle yang terkontaminasi (sel di luar jangkauan Visionary), melangkah ke Attendant of Mysteries di badai Leodero, lalu menelan karakteristik Zaratul untuk menekan Celestial Worthy - ditutup sosok tergantung terbalik di Forsaken Land of the Gods. Vol 7 berakhir di ch.1353; kelanjutan kisahnya ada di Vol 8 Part 1 (ch.1354+).",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
@@ -554,7 +554,15 @@ window.LOTM_CATALOG = [
     volume: "Volume 8",
     label: "Volume 8 — The Fool",
     parts: [
-
+      {
+        id: "lotm-vol8-recap-1",
+        label: "Part 1 — Warisan Mr. Door & Ritual Antigonus",
+        file: "data/lotm-vol8-recap-1.js",
+        description: "5 scene (ch. 1354-1358; 1 scene per bab) - pembuka Volume 8 'The Fool' (Vol 7 berakhir ch.1353): setelah ritual Mr. Door dicuri Amon, pintu dan jendela terbuka serentak di seluruh dunia dan hujan karakteristik Beyonder Urutan Tinggi jatuh ke dunia nyata - Wendel dan Monica terbangun tanpa tahu bagaimana mereka kembali ke Backlund, keluarga Abraham menatap relik Mr. Door dengan takut dan serakah, Susie menemukan mayat berkulit terkelupas di manor keluarga Hall, dan Alger melepas jubah kardinalnya untuk pindah ke Gereja Dewa Laut. Di atas kabut, Klein menstabilkan kebangkitan Celestial Worthy, memetakan tiga kekuatan Attendant of Mysteries - Regenerate, Reassembly (Grafting), Realm of Mysteries - lalu menyusun jalan menjadi The Fool: mencuri nasib Antigonus ala ritual lamanya, dengan bantuan Dewi Evernight dan air River of Eternal Darkness. Adam membawa Arrodes dan Blasphemy Slate kedua melewati tirai The Hanged Man, Ouroboros menolak menjawab, dan Will Auceptin memperingatkan bahwa mengakomodasi Uniqueness lebih dulu hanyalah tipuan.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      }
     ]
   }
 ];
