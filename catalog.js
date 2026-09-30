@@ -562,6 +562,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol8-recap-2",
+        label: "Part 2 — Kota Kematian & Trojan Horse of Destiny",
+        file: "data/lotm-vol8-recap-2.js",
+        description: "16 scene (ch. 1359-1374; 1 scene per bab) - Klein menerima aksesori emas Phoenix dari Dewi Evernight, menulis surat perpisahan Tingen dan menyaksikan pernikahan Benson dari bangku kosong; perawatan mental bersama Miss Justice berubah ekspedisi: Taman Eden dihancurkan, Pauli Derlau tewas di tangan The World, dan Psychology Alchemists ditinggalkan Hermes sendiri. Xio menerima tawaran Imperative Mage dengan harga membangunkan Mr. Fool, Alger memegang Sea God Scepter menuju takhta Dewa Laut, dan peta sekutu-musuh ritual Uniqueness The Fool tersusun. Di kedalaman Kota Calderon, empat jejak kematian Klein mencoba menyeretnya ke River of Eternal Darkness; Jin meminjamkan Magic Wishing Lamp sebagai perisai; lalu di puncak Hornacis Klein mencuri nasib Antigonus dalam tidur abadinya - memori serigala iblis berkaki delapan membanjiri kesadarannya tepat ketika Amon membunyikan bel Gereja The Fool.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
