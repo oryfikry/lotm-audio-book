@@ -571,6 +571,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol8-recap-3",
+        label: "Part 3 — Kelahiran The Fool & Duel Melawan Amon",
+        file: "data/lotm-vol8-recap-3.js",
+        description: "16 scene (ch. 1375-1390; 1 scene per bab) - klimaks Volume 8: pintu-pintu dunia tertutup Amon, Adam menjadi Half a Great Old Ones dan mengurung tiga dewa sejati, Primordial Demoness dan Hidden Sage menyerbu ritual, para Amon membalas dengan ocehan gila dan hadiah siang abadi; tubuh Klein hancur berulang kali hingga Dewi Evernight menebasnya dengan Twilight Sword dan Klein bangkit dari kabut sejarah - The Fool sejati lahir di dunia astral. Duel lawan Amon pecah di Kastil Sefirah: patung kertas, kartu Blasphemy, aturan Trunsoest Brass Book, bintang konseptual, Blind Stupidity, sampai supernova - ditutup taruhan gila Klein dan pelarian Amon ke kosmos. Ditutup pertemuan terakhir Klub Tarot: komisi jangka panjang tiap anggota, Kebangkitan The World berarti kembalinya The Fool, dan Klein melangkah menembus pintu kabut bersama Arrodes - Aku akhirnya akan menghadapi Dia.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
