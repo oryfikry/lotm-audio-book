@@ -580,6 +580,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol8-recap-4",
+        label: "Part 4 — Tamat & Di Zaman Modern",
+        file: "data/lotm-vol8-recap-4.js",
+        description: "16 scene (ch. 1391-1406; 1 scene per bab) - bab penutup seri: Cattleya tampil sebagai Queen of Stars, Xio menyusun naskah palsu untuk MI9 bersama Fors, Leonard kembali membeli antologi puisi seperti masa Midnight Poet, Alger berlayar dengan kapal hantu Blue Avenger membawa Book of Calamity, Audrey membagi identitas Dreamweaver untuk tinggal bersama keluarganya, dan Azik Eggers bangun dari peti mati membaca tumpukan surat Klein sebelum memulai perjalanan mengejar masa lalu - ditutup Melissa mengajarkan keponakannya menyapa The Fool: TAMAT cerita utama. Dilanjutkan dua cerita sampingan: Kehidupan Sehari-hari Orang Biasa (Barton, amplop berbau darah, keluarga Tamara) dan Di Zaman Modern (karyawan biasa, loot box lima yuan, dan rahasia di baliknya - mimpi Klein yang dirancang Celestial Worthy untuk melahapnya).",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
     ]
   }
