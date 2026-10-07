@@ -598,6 +598,15 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol8-recap-6",
+        label: "Part 6 — Sudut Itu (Tamat Book 1)",
+        file: "data/lotm-vol8-recap-6.js",
+        description: "15 scene (ch. 1421-1432 + bab bonus & side story; 1 scene per bab + 3 epilog) - PART PENUTUP Book 1: Zhou Mingrui resmi jadi siswa berbayar Dream Tutoring Classes milik keluarga Guru Da (sang hooligan brosur ternyata tutornya sendiri), Catie Huang mentransfer 20.000 yuan, dan jamur kering pemberiannya menemui minuman Instigator: lahirlah manusia jamur yang lari ke perusahaan sebelah - sarang pemuja berkostum dengan sosok misterius Mr. A yang memakannya begitu saja. Laporan polisi berujung memalukan - Perusahaan Aurora legal, itu 'budaya perusahaan'. Lagu Alger Wilson 'Maju! Maju!' membuat Zhou pingsan, film Bajak Laut 3 menyingkap ramuan seperti minuman Assassin, dan di bioskop seorang gadis pendek berbisik: 'Seseorang sedang mengawasimu' - sementara di stasiun kereta, gerbong berisi para cosplayer tiba diam-diam. Bab bonus Sudut Itu: awak Kapten Gray menemukan pelabuhan mati dan kota bernama Utopia - semua penghuninya menguap; di katedral, masing-masing melihat mimpi buruknya sendiri, dan gagak di kedalaman kegelapan menutup semuanya. Ditutup episode spesial Keponakan Klein (doa sebelum tidur dan es teh manis), tiga cerita sampingan (Klein Jalan Narcissus 13, Danitz si remaja pemberontak, Tingen 1346 bersama Daly), dan teaser Buku 2: Circle of Inevitability - tahun 1368, bulan merah jatuh, Lumian Lee. SELESAI. TAMAT.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
 
     ]
