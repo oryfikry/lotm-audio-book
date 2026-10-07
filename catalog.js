@@ -589,7 +589,17 @@ window.LOTM_CATALOG = [
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol8-recap-5",
+        label: "Part 5 — Di Zaman Modern: Mesin Penjual Otomatis",
+        file: "data/lotm-vol8-recap-5.js",
+        description: "14 scene (ch. 1407-1420; 1 scene per bab) - lanjutan cerita sampingan Di Zaman Modern: makan malam bersama Peng Deng, kartu pos Ossuary Sedlec, dan Leap of Faith pertama Zhou Mingrui dari rooftop tiga lantai - tepat saat polisi datang memeriksa izin tinggal. Petugas Deng yang buta wajah memperingatkan agama ilegal ber-MLM dengan istilah Fully Automatic Wishing Machine, sementara di Klub Tarot The Star memperingatkan sekte misterius lalu hilang mendadak - dan dua anggota curiga dia polisi siber. Gadis cantik di Lawson menghilang begitu Petugas Deng tiba, hooligan brosur ternyata tenar kelas bimbingan, koridor gelap dihantui angin dingin, dan di cermin kamar mandi muncul hantu wanita bertopi kecil yang mengaku dipekerjakan detektif Sherlock Moriarty untuk melindungi Zhou. Madam Da - cenayang berwajah bening berlidah merah - menawarkan pengusiran 20.000 yuan, mengirim A Chinese Ghost Story sebagai bahan belajar, dan malamnya hantu itu menonton bersama dari dalam layar. Di bandara, penerbangan Mr. Zaratulstra dialihkan ke Ning Bei lalu badai petir membatalkan semuanya; sopir Prancis Rosago mengantar pulang dengan gaya pembalap empat puluh menit penuh adrenalin. Putri CEO Huang, Bernie Huang, meminta Zhou membaca tulisan Cursive yang ternyata buku harian ayahnya; Old Ai memindahkannya ke proyek kolaborasi polisi - yang picunya ternyata Petugas Deng, ditemani pendeta Interpol Old Neil, tunangan Madam Daly. Di perjalanan pulang Zhou menyelamatkan gadis kecil dari SUV dan diajak minum di toko buku berisi Groselle's Travels; malamnya dia menunda kedatangan Madam Daly dengan alasan hantu sudah pergi - dan Miss Huang muncul lagi di kedai barbekyu: dia harus mendaftar Dream Tutoring Classes milik keluarga si hooligan brosur.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       }
+
     ]
   }
 ];
