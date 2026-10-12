@@ -42,85 +42,104 @@ window.LOTM_CATALOG = [
   },
   {
     id: "vol-3",
-    label: "Volume 3",
+    label: "Volume 3 — Traveler (Redraft ±30%)",
     parts: [
       {
         id: "lotm-vol3-recap-1",
         label: "Part 1 — The Adventurer",
-        file: "data/lotm-vol3-recap-1.js?v=20260908-vol3-part2-1",
-        description: "42-scene Vol. 3 opener: Gehrman Sparrow, the White Agate voyage, Bansy Harbor, and Bayam. Narrated with gemini Puck.",
+        file: "data/lotm-vol3-recap-1.js?v=20261012-vol3-redraft-1",
+        description: "Redraft Vol. 3 ch. 565–579: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-1",
-        audioAvailable: true,
-        availability: "Audio ready · 42 scenes"
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol3-recap-2",
         label: "Part 2 — Sea God Scepter",
-        file: "data/lotm-vol3-recap-2.js?v=resume-20260908-1524",
-        description: "39-scene continuation: Arrodes on the radio, the dying Sea God Kalvetua, the Rose School assassins, and the scepter that saves Bayam.",
+        file: "data/lotm-vol3-recap-2.js?v=20261012-vol3-redraft-2",
+        description: "Redraft Vol. 3 ch. 580–594: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-2",
-        audioAvailable: true,
-        availability: "Audio ready · 39 scenes"
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol3-recap-3",
         label: "Part 3 — Marionettist",
-        file: "data/lotm-vol3-recap-3.js?v=resume-20260909-1518",
-        description: "39-scene continuation: boarding the Golden Dream, Edwina Edwards and Frank Lee, the sunken Elf temple, the mermaid song, and Klein's promotion to Sequence 5 Marionettist.",
+        file: "data/lotm-vol3-recap-3.js?v=20261012-vol3-redraft-3",
+        description: "Redraft Vol. 3 ch. 595–609: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-3",
-        audioAvailable: true,
-        availability: "Audio ready · 39 scenes"
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol3-recap-4",
         label: "Part 4 — Blood Admiral",
-        file: "data/lotm-vol3-recap-4.js?v=resume-20260910-1518",
-        description: "37-scene continuation: hunting Blood Admiral Senor aboard the Tree of Flesh, the first humanoid Marionette, the Balam tomb, and Danitz's wardrobe nightmare.",
+        file: "data/lotm-vol3-recap-4.js?v=20261012-vol3-redraft-4",
+        description: "Redraft Vol. 3 ch. 610–624: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-4",
         audioAvailable: false,
-        availability: "Audio ready · 37 scenes"
+        availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol3-recap-5",
         label: "Part 5 — The Hermit",
-        file: "data/lotm-vol3-recap-5.js?v=resume-20260919-1504",
-        description: "Revised 35-scene cut: Cattleya joins the Tarot Club as The Hermit, Roselle's Outer Deities diary, the sunken pyramid and Card of the Tyrant, and the Black Tulip standoff.",
+        file: "data/lotm-vol3-recap-5.js?v=20261012-vol3-redraft-5",
+        description: "Redraft Vol. 3 ch. 625–639: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-5",
         audioAvailable: false,
-        availability: "Audio ready · 35 scenes"
+        availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol3-recap-6",
         label: "Part 6 — Groselle's Travels",
-        file: "data/lotm-vol3-recap-6.js?v=20260909-vol3-part6-1",
-        description: "33-scene continuation: the sealed book world, the cross-era heroes Groselle, Longsan, Mobius and Snowman, the Frost Dragon King, and the farewell as time resumes.",
+        file: "data/lotm-vol3-recap-6.js?v=20261012-vol3-redraft-6",
+        description: "Redraft Vol. 3 ch. 640–654: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-6",
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol3-recap-7",
         label: "Part 7 — Bayam and Amon",
-        file: "data/lotm-vol3-recap-7.js?v=20260909-vol3-part7-1",
-        description: "34-scene continuation: Bayam, the new Sea God faith, Amon's Time Worm intrusion, the Tarot Club meeting, Danitz's farewell, and Klein's departure for Backlund.",
+        file: "data/lotm-vol3-recap-7.js?v=20261012-vol3-redraft-7",
+        description: "Redraft Vol. 3 ch. 655–669: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-7",
         audioAvailable: false,
         availability: "Script ready · audio pending"
       },
       {
         id: "lotm-vol3-recap-8",
-        label: "Part 8 — Grand Finale",
-        file: "data/lotm-vol3-recap-8.js?v=20260909-vol3-part8-1",
-        description: "26-scene finale: the White Pelican voyage, Pritz Harbor, Klein's divination and artifacts, the Dwayne Dantes transformation, and his arrival in Backlund.",
+        label: "Part 8 — Grand Finale of the Sea",
+        file: "data/lotm-vol3-recap-8.js?v=20261012-vol3-redraft-8",
+        description: "Redraft Vol. 3 ch. 670–684: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioBase: "audio/lotm-vol3-recap-8",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol3-recap-9",
+        label: "Part 9 — The Frost Dragon King",
+        file: "data/lotm-vol3-recap-9.js?v=20261012-vol3-redraft-9",
+        description: "Redraft Vol. 3 ch. 685–699: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol3-recap-10",
+        label: "Part 10 — The Book World Battle",
+        file: "data/lotm-vol3-recap-10.js?v=20261012-vol3-redraft-10",
+        description: "Redraft Vol. 3 ch. 700–714: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        audioAvailable: false,
+        availability: "Script ready · audio pending"
+      },
+      {
+        id: "lotm-vol3-recap-11",
+        label: "Part 11 — Traveler Finale",
+        file: "data/lotm-vol3-recap-11.js?v=20261012-vol3-redraft-11",
+        description: "Redraft Vol. 3 ch. 715–732: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
+        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
         audioAvailable: false,
         availability: "Script ready · audio pending"
       }
