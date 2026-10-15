@@ -50,8 +50,8 @@ window.LOTM_CATALOG = [
         file: "data/lotm-vol3-recap-1.js?v=20261012-vol3-redraft-1",
         description: "Redraft Vol. 3 ch. 565–579: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        audioAvailable: true,
+        availability: "Audio lengkap · 15 scene · ±52 menit"
       },
       {
         id: "lotm-vol3-recap-2",
@@ -59,8 +59,8 @@ window.LOTM_CATALOG = [
         file: "data/lotm-vol3-recap-2.js?v=20261012-vol3-redraft-2",
         description: "Redraft Vol. 3 ch. 580–594: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        audioAvailable: true,
+        availability: "Audio lengkap · 15 scene · ±51 menit"
       },
       {
         id: "lotm-vol3-recap-3",
@@ -68,8 +68,8 @@ window.LOTM_CATALOG = [
         file: "data/lotm-vol3-recap-3.js?v=20261012-vol3-redraft-3",
         description: "Redraft Vol. 3 ch. 595–609: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        audioAvailable: true,
+        availability: "Audio lengkap · 15 scene · ±51 menit"
       },
       {
         id: "lotm-vol3-recap-4",
@@ -77,8 +77,8 @@ window.LOTM_CATALOG = [
         file: "data/lotm-vol3-recap-4.js?v=20261012-vol3-redraft-4",
         description: "Redraft Vol. 3 ch. 610–624: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        audioAvailable: true,
+        availability: "Audio lengkap · 15 scene · ±53 menit"
       },
       {
         id: "lotm-vol3-recap-5",
@@ -86,8 +86,8 @@ window.LOTM_CATALOG = [
         file: "data/lotm-vol3-recap-5.js?v=20261012-vol3-redraft-5",
         description: "Redraft Vol. 3 ch. 625–639: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        audioAvailable: true,
+        availability: "Audio 12/15 · scene-013 s.d. 015 pending"
       },
       {
         id: "lotm-vol3-recap-6",
