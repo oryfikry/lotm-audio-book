@@ -84,64 +84,64 @@ window.LOTM_CATALOG = [
         id: "lotm-vol3-recap-5",
         label: "Part 5 — The Hermit",
         file: "data/lotm-vol3-recap-5.js?v=20261012-vol3-redraft-5",
-        description: "Redraft Vol. 3 ch. 625–639: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        description: "Redraft Vol. 3 ch. 625–639: coverage ±30%, 1 scene per chapter, audio lengkap 15/15 (12 Puck + 3 narrator-lotm).",
+        voice: "Puck (scene-001-012) + omnivoice-tts/narrator-lotm (scene-013-015)",
         audioAvailable: true,
-        availability: "Audio 12/15 · scene-013 s.d. 015 pending"
+        availability: "Audio 15/15 · scene-001-012 Puck, 013-015 narrator-lotm"
       },
       {
         id: "lotm-vol3-recap-6",
         label: "Part 6 — Groselle's Travels",
         file: "data/lotm-vol3-recap-6.js?v=20261012-vol3-redraft-6",
-        description: "Redraft Vol. 3 ch. 640–654: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        description: "Redraft Vol. 3 ch. 640–654: coverage ±30%, 1 scene per chapter, dinarasikan penuh voice narrator-lotm (omnivoice-tts).",
+        voice: "omnivoice-tts/narrator-lotm",
+        audioAvailable: true,
+        availability: "Audio 15/15"
       },
       {
         id: "lotm-vol3-recap-7",
         label: "Part 7 — Bayam and Amon",
         file: "data/lotm-vol3-recap-7.js?v=20261012-vol3-redraft-7",
-        description: "Redraft Vol. 3 ch. 655–669: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        description: "Redraft Vol. 3 ch. 655–669: coverage ±30%, 1 scene per chapter, dinarasikan penuh voice narrator-lotm (omnivoice-tts).",
+        voice: "omnivoice-tts/narrator-lotm",
+        audioAvailable: true,
+        availability: "Audio 15/15"
       },
       {
         id: "lotm-vol3-recap-8",
         label: "Part 8 — Grand Finale of the Sea",
         file: "data/lotm-vol3-recap-8.js?v=20261012-vol3-redraft-8",
-        description: "Redraft Vol. 3 ch. 670–684: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        description: "Redraft Vol. 3 ch. 670–684: coverage ±30%, 1 scene per chapter, dinarasikan penuh voice narrator-lotm (omnivoice-tts).",
+        voice: "omnivoice-tts/narrator-lotm",
+        audioAvailable: true,
+        availability: "Audio 15/15"
       },
       {
         id: "lotm-vol3-recap-9",
         label: "Part 9 — The Frost Dragon King",
         file: "data/lotm-vol3-recap-9.js?v=20261012-vol3-redraft-9",
-        description: "Redraft Vol. 3 ch. 685–699: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        description: "Redraft Vol. 3 ch. 685–699: coverage ±30%, 1 scene per chapter, dinarasikan penuh voice narrator-lotm (omnivoice-tts).",
+        voice: "omnivoice-tts/narrator-lotm",
+        audioAvailable: true,
+        availability: "Audio 15/15"
       },
       {
         id: "lotm-vol3-recap-10",
         label: "Part 10 — The Book World Battle",
         file: "data/lotm-vol3-recap-10.js?v=20261012-vol3-redraft-10",
-        description: "Redraft Vol. 3 ch. 700–714: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        description: "Redraft Vol. 3 ch. 700–714: coverage ±30%, 1 scene per chapter, dinarasikan penuh voice narrator-lotm (omnivoice-tts).",
+        voice: "omnivoice-tts/narrator-lotm",
+        audioAvailable: true,
+        availability: "Audio 15/15"
       },
       {
         id: "lotm-vol3-recap-11",
         label: "Part 11 — Traveler Finale",
         file: "data/lotm-vol3-recap-11.js?v=20261012-vol3-redraft-11",
-        description: "Redraft Vol. 3 ch. 715–732: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
-        audioAvailable: false,
-        availability: "Script ready · audio pending"
+        description: "Redraft Vol. 3 ch. 715–732: coverage ±30%, 1 scene per chapter, dinarasikan penuh voice narrator-lotm (omnivoice-tts).",
+        voice: "omnivoice-tts/narrator-lotm",
+        audioAvailable: true,
+        availability: "Audio 18/18"
       }
     ]
   },
