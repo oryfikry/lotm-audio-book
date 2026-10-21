@@ -1,7 +1,7 @@
 # LOTM Audio-Book Pipeline — Operating Manual
 
 Single source of truth for producing and publishing Lord of the Mysteries recap
-narration parts for https://lotm.oryfikry.my.id (primary sejak 2026-10-21; yt.oryfikry.my.id tetap jalan sebagai alias). Written so a fresh agent session
+narration parts for https://oryfikry.my.id (pindah ke apex 2026-10-21; lotm.oryfikry.my.id & yt.oryfikry.my.id = redirect 301). Written so a fresh agent session
 can pick up mid-project without re-discovering anything.
 
 Last verified: 2026-09-08 (Vol. 3 Part 1 complete, Vol. 3 Part 2 in progress).
@@ -19,7 +19,7 @@ into a per-part package they import into their OWN video editor:
 - `keywords.txt` — per-scene visual + SFX search phrases (copy-paste ready)
 - `audio/scene-XXX.mp3` — one MP3 per scene
 
-The same data is published to a static browser library at lotm.oryfikry.my.id (alias: yt.oryfikry.my.id) so
+The same data is published to a static browser library at oryfikry.my.id so
 scripts are readable and audio is playable/downloadable per scene.
 
 **Do not build video automation.** The user deliberately dropped that scope.
@@ -290,7 +290,7 @@ gap-skipping, last-scene stop, and no-advance-when-off.
 4. **Byte-compare** public versioned assets against local files — HTTP 200 alone
    does not prove the new bytes are being served:
    ```bash
-   curl -s "https://lotm.oryfikry.my.id/app.js?v=$VER" -o /tmp/pub.js
+   curl -s "https://oryfikry.my.id/app.js?v=$VER" -o /tmp/pub.js
    cmp -s /tmp/pub.js /var/www/yt/app.js && echo MATCH
    ```
 5. ffprobe durations must equal manifest `real_seconds` (`build_manifest.py` does

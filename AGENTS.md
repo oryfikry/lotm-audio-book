@@ -1,4 +1,4 @@
-# AGENTS.md — Konvensi Produksi LOTM Recap (lotm.oryfikry.my.id — primary; yt.oryfikry.my.id alias)
+# AGENTS.md — Konvensi Produksi LOTM Recap (oryfikry.my.id — primary sejak 2026-10-21; lotm/yt = redirect 301 ke apex)
 
 ## Sumber Kanon (WAJIB)
 - Teks utama: EPUB Webnovel lengkap 1.430 bab di `/tmp/lotm_webnovel.epub`, ekstrak `/tmp/lotm_wn/EPUB/text/`.
@@ -40,7 +40,7 @@
 5. Verifikasi: `node --check catalog.js`, `curl` file data → HTTP 200.
 6. `git add` + commit pesan deskriptif.
 
-## Kebijakan Cache (config nginx `deploy/nginx-yt.oryfikry.my.id.conf`, diterapkan 2026-09-11; server_name lotm primary sejak 2026-10-21)
+## Kebijakan Cache (config nginx `deploy/nginx-yt.oryfikry.my.id.conf`, diterapkan 2026-09-11; library pindah ke apex oryfikry.my.id sejak 2026-10-21; lotm/yt kini redirect-only)
 - `/data/*` dan `catalog.js` → **`no-store`** (tidak pernah di-cache browser/Cloudflare; perubahan deploy langsung terlihat).
 - `index.html` → `max-age=300` (revalidate 5 menit).
 - `app.js`, `style.css`, audio, gambar → `max-age=31536000, immutable` (aman karena pakai `?v=` di index.html; file konten tak pernah diubah in-place).
