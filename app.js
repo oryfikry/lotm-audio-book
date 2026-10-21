@@ -184,7 +184,7 @@ async function copy(text, success) {
   catch { setStatus("Copy failed — please select the text manually."); }
 }
 function audioUrl(scene) {
-  const base = activePart?.audioBase || "audio";
+  const base = activePart?.audioBase || `audio/${data?.part || activePart?.id || ""}`;
   return `${base}/${scene.audio_file.split("/").pop()}`;
 }
 function download(url, name) {
