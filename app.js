@@ -79,7 +79,6 @@ async function loadPart(part) {
   const pill = $("#availability");
   pill.textContent = part.availability;
   pill.classList.toggle("pending", !part.audioAvailable);
-  $("#dl-all").hidden = !activePart.audioAvailable;
   render();
   requestAnimationFrame(restoreScene);
 }
@@ -153,7 +152,6 @@ function render() {
     const sceneHasAudio = Boolean(activePart.audioAvailable && scene.real_seconds);
     if (sceneHasAudio) {
       actions.prepend(makeButton("▶ Play", () => openPlayer(scene)));
-      actions.insertBefore(makeButton("⬇ MP3", () => download(audioUrl(scene), `${scene.id}.mp3`)), actions.children[1]);
     }
     card.append(actions);
     if (!sceneHasAudio) {
@@ -186,14 +184,6 @@ async function copy(text, success) {
 function audioUrl(scene) {
   const base = activePart?.audioBase || `audio/${data?.part || activePart?.id || ""}`;
   return `${base}/${scene.audio_file.split("/").pop()}`;
-}
-function download(url, name) {
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = name;
-  document.body.append(anchor);
-  anchor.click();
-  anchor.remove();
 }
 const player = $("#player");
 const pAudio = $("#p-audio");
@@ -271,41 +261,6 @@ window.addEventListener("scroll", () => {
 const backToTop = $("#back-to-top");
 window.addEventListener("scroll", () => backToTop.classList.toggle("visible", window.scrollY > 500), { passive: true });
 backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-$("#dl-all").addEventListener("click", async () => {
-  if (!data || !activePart?.audioAvailable) return;
-  const button = $("#dl-all");
-  button.disabled = true;
-  setStatus("Preparing audio download…");
-  try {
-    const ready = data.scenes.filter((scene) => scene.real_seconds);
-    const entries = await Promise.all(ready.map(async (scene) => {
-      const response = await fetch(audioUrl(scene));
-      if (!response.ok) throw new Error(`${scene.id}: HTTP ${response.status}`);
-      return { name: `${scene.id}.mp3`, bytes: new Uint8Array(await response.arrayBuffer()) };
-    }));
-    const url = URL.createObjectURL(makeZip(entries));
-    download(url, `${data.part}.zip`);
-    setTimeout(() => URL.revokeObjectURL(url), 30000);
-    setStatus("Download started.");
-  } catch (error) { setStatus(`Download failed: ${error.message}`); }
-  finally { button.disabled = false; }
-});
-const crcTable = (() => { const table = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = (c & 1) ? 0xedb88320 ^ (c >>> 1) : c >>> 1; table[n] = c >>> 0; } return table; })();
-function crc32(bytes) { let c = 0xffffffff; for (const byte of bytes) c = crcTable[(c ^ byte) & 255] ^ (c >>> 8); return (c ^ 0xffffffff) >>> 0; }
-function makeZip(entries) {
-  const encoder = new TextEncoder(), chunks = [], central = []; let offset = 0;
-  for (const { name, bytes } of entries) {
-    const filename = encoder.encode(name), crc = crc32(bytes), local = new Uint8Array(30 + filename.length), v = new DataView(local.buffer);
-    v.setUint32(0, 0x04034b50, true); v.setUint16(4, 20, true); v.setUint32(14, crc, true); v.setUint32(18, bytes.length, true); v.setUint32(22, bytes.length, true); v.setUint16(26, filename.length, true); local.set(filename, 30); chunks.push(local, bytes);
-    const directory = new Uint8Array(46 + filename.length), dv = new DataView(directory.buffer);
-    dv.setUint32(0, 0x02014b50, true); dv.setUint16(4, 20, true); dv.setUint16(6, 20, true); dv.setUint32(16, crc, true); dv.setUint32(20, bytes.length, true); dv.setUint32(24, bytes.length, true); dv.setUint16(28, filename.length, true); dv.setUint32(42, offset, true); directory.set(filename, 46); central.push(directory); offset += local.length + bytes.length;
-  }
-  const centralSize = central.reduce((sum, item) => sum + item.length, 0), end = new Uint8Array(22), endView = new DataView(end.buffer);
-  endView.setUint32(0, 0x06054b50, true); endView.setUint16(8, entries.length, true); endView.setUint16(10, entries.length, true); endView.setUint32(12, centralSize, true); endView.setUint32(16, offset, true);
-  const output = new Uint8Array(offset + centralSize + end.length); let position = 0;
-  for (const chunk of [...chunks, ...central, end]) { output.set(chunk, position); position += chunk.length; }
-  return new Blob([output], { type: "application/zip" });
-}
 configureVolumes();
 
 /* Theme toggle (dark/light) with persistence. */
