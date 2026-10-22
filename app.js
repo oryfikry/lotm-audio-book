@@ -187,6 +187,17 @@ function audioUrl(scene) {
 }
 const player = $("#player");
 const pAudio = $("#p-audio");
+const speedSelect = $("#p-speed");
+const SPEED_KEY = "lotm.player.speed";
+const speedSaved = parseFloat(localStorage.getItem(SPEED_KEY));
+pAudio.playbackRate = [0.5, 0.75, 1, 1.25].includes(speedSaved) ? speedSaved : 1;
+speedSelect.value = String(pAudio.playbackRate);
+speedSelect.addEventListener("change", () => {
+  const rate = parseFloat(speedSelect.value);
+  pAudio.playbackRate = rate;
+  try { localStorage.setItem(SPEED_KEY, String(rate)); } catch {}
+  setStatus(`Kecepatan putar: ${rate}×`);
+});
 const autoButton = $("#p-auto");
 const AUTOPLAY_KEY = "lotm.autoplayNext";
 let autoplayNext = localStorage.getItem(AUTOPLAY_KEY) === "1";

@@ -115,6 +115,16 @@ button:disabled { cursor: wait; opacity: .55; transform: none; }
 .p-title { color: var(--accent); font: .84rem/1 var(--mono); }
 #p-audio { width: 100%; height: 36px; }
 .p-controls { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+
+.p-speed select {
+  background: var(--panel, #1c2430);
+  color: inherit;
+  border: 1px solid var(--border, #3a4656);
+  border-radius: 8px;
+  padding: 4px 6px;
+  font: inherit;
+  cursor: pointer;
+}
 #p-auto { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; color: var(--muted); background: var(--auto-bg); border: 1px solid var(--border); border-radius: 999px; font: .74rem/1 var(--mono); cursor: pointer; transition: color .15s, border-color .15s, background .15s; }
 #p-auto:hover { color: var(--auto-hover); border-color: #3b465e; }
 #p-auto.on { color: var(--auto-on-color); background: var(--accent); border-color: var(--accent); }
