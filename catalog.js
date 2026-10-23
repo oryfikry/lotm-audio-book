@@ -49,7 +49,7 @@ window.LOTM_CATALOG = [
         label: "Part 1 — The Adventurer",
         file: "data/lotm-vol3-recap-1.js?v=20261012-vol3-redraft-1",
         description: "Redraft Vol. 3 ch. 565–579: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        voice: "omnivoice-tts/narrator-lotm",
         audioAvailable: true,
         availability: "Audio lengkap · 15 scene · ±52 menit"
       },
@@ -58,7 +58,7 @@ window.LOTM_CATALOG = [
         label: "Part 2 — Sea God Scepter",
         file: "data/lotm-vol3-recap-2.js?v=20261012-vol3-redraft-2",
         description: "Redraft Vol. 3 ch. 580–594: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        voice: "omnivoice-tts/narrator-lotm",
         audioAvailable: true,
         availability: "Audio lengkap · 15 scene · ±51 menit"
       },
@@ -67,7 +67,7 @@ window.LOTM_CATALOG = [
         label: "Part 3 — Marionettist",
         file: "data/lotm-vol3-recap-3.js?v=20261012-vol3-redraft-3",
         description: "Redraft Vol. 3 ch. 595–609: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        voice: "omnivoice-tts/narrator-lotm",
         audioAvailable: true,
         availability: "Audio lengkap · 15 scene · ±51 menit"
       },
@@ -76,7 +76,7 @@ window.LOTM_CATALOG = [
         label: "Part 4 — Blood Admiral",
         file: "data/lotm-vol3-recap-4.js?v=20261012-vol3-redraft-4",
         description: "Redraft Vol. 3 ch. 610–624: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
-        voice: "gemini/gemini-3.1-flash-tts-preview/Puck",
+        voice: "omnivoice-tts/narrator-lotm",
         audioAvailable: true,
         availability: "Audio lengkap · 15 scene · ±53 menit"
       },
@@ -84,10 +84,10 @@ window.LOTM_CATALOG = [
         id: "lotm-vol3-recap-5",
         label: "Part 5 — The Hermit",
         file: "data/lotm-vol3-recap-5.js?v=20261012-vol3-redraft-5",
-        description: "Redraft Vol. 3 ch. 625–639: coverage ±30%, 1 scene per chapter, audio lengkap 15/15 (12 Puck + 3 narrator-lotm).",
-        voice: "Puck (scene-001-012) + omnivoice-tts/narrator-lotm (scene-013-015)",
+        description: "Redraft Vol. 3 ch. 625–639: coverage ±30%, 1 scene per chapter, audio lengkap 15/15 narrator-lotm.",
+        voice: "omnivoice-tts/narrator-lotm",
         audioAvailable: true,
-        availability: "Audio 15/15 · scene-001-012 Puck, 013-015 narrator-lotm"
+        availability: "Audio 15/15"
       },
       {
         id: "lotm-vol3-recap-6",
