@@ -19,7 +19,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-001.mp3"
+      "audio_file": "scene-001.mp3?v=20261031"
     },
     {
       "id": "scene-002",
@@ -36,7 +36,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-002.mp3"
+      "audio_file": "scene-002.mp3?v=20261031"
     },
     {
       "id": "scene-003",
@@ -53,7 +53,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-003.mp3"
+      "audio_file": "scene-003.mp3?v=20261031"
     },
     {
       "id": "scene-004",
@@ -70,7 +70,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-004.mp3"
+      "audio_file": "scene-004.mp3?v=20261031"
     },
     {
       "id": "scene-005",
@@ -87,7 +87,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-005.mp3"
+      "audio_file": "scene-005.mp3?v=20261031"
     },
     {
       "id": "scene-006",
@@ -104,7 +104,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-006.mp3"
+      "audio_file": "scene-006.mp3?v=20261031"
     },
     {
       "id": "scene-007",
@@ -121,7 +121,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-007.mp3"
+      "audio_file": "scene-007.mp3?v=20261031"
     },
     {
       "id": "scene-008",
@@ -138,7 +138,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-008.mp3"
+      "audio_file": "scene-008.mp3?v=20261031"
     },
     {
       "id": "scene-009",
@@ -155,7 +155,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-009.mp3"
+      "audio_file": "scene-009.mp3?v=20261031"
     },
     {
       "id": "scene-010",
@@ -172,7 +172,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-010.mp3"
+      "audio_file": "scene-010.mp3?v=20261031"
     },
     {
       "id": "scene-011",
@@ -189,7 +189,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-011.mp3"
+      "audio_file": "scene-011.mp3?v=20261031"
     },
     {
       "id": "scene-012",
@@ -206,7 +206,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-012.mp3"
+      "audio_file": "scene-012.mp3?v=20261031"
     },
     {
       "id": "scene-013",
@@ -223,7 +223,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-013.mp3"
+      "audio_file": "scene-013.mp3?v=20261031"
     },
     {
       "id": "scene-014",
@@ -240,7 +240,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-014.mp3"
+      "audio_file": "scene-014.mp3?v=20261031"
     },
     {
       "id": "scene-015",
@@ -257,7 +257,7 @@ window.LOTM_DATA = {
         "orchestral",
         "ambient"
       ],
-      "audio_file": "scene-015.mp3"
+      "audio_file": "scene-015.mp3?v=20261031"
     }
   ]
 };
