@@ -51,7 +51,7 @@ window.LOTM_CATALOG = [
         description: "Redraft Vol. 3 ch. 565–579: coverage ±30%, 1 scene per chapter, script ready for narration with Puck.",
         voice: "omnivoice-tts/narrator-lotm",
         audioAvailable: true,
-        availability: "Audio lengkap · 15 scene · ±52 menit"
+        availability: "Audio lengkap · 15 scene · ±54 menit"
       },
       {
         id: "lotm-vol3-recap-2",
