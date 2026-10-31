@@ -219,10 +219,25 @@ function nextPlayable(fromId) {
   return index === -1 ? null : pool[index + 1] || null;
 }
 
+function setMediaSession(scene) {
+  if (!("mediaSession" in navigator)) return;
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: `${scene.id} — LOTM Recap`,
+      album: `${activeVolume?.label || ""} · ${activePart?.label || ""}`,
+      artist: "Lord of the Mysteries — Recap Library",
+      artwork: [
+        { src: "assets/icon-192.png?v=20261027", sizes: "192x192", type: "image/png" },
+        { src: "assets/icon-512.png?v=20261027", sizes: "512x512", type: "image/png" },
+      ],
+    });
+  } catch {}
+}
 function openPlayer(scene) {
   playingId = scene.id;
   $("#p-title").textContent = `${scene.id} · ${fmt(scene.real_seconds)}`;
   pAudio.src = audioUrl(scene);
+  setMediaSession(scene);
   player.hidden = false;
   pAudio.play().catch(() => {});
 }
