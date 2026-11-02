@@ -200,7 +200,7 @@ speedSelect.addEventListener("change", () => {
 });
 const autoButton = $("#p-auto");
 const AUTOPLAY_KEY = "lotm.autoplayNext";
-let autoplayNext = localStorage.getItem(AUTOPLAY_KEY) === "1";
+let autoplayNext = localStorage.getItem(AUTOPLAY_KEY) !== "0";
 let playingId = null;
 
 function paintAutoButton() {
@@ -212,6 +212,14 @@ function paintAutoButton() {
 }
 
 /* Next scene that actually has audio, in the order currently rendered. */
+function advanceNext(scene) {
+  playingId = scene.id;
+  $("#p-title").textContent = `${scene.id} · ${fmt(scene.real_seconds)}`;
+  pAudio.src = audioUrl(scene);
+  setMediaSession(scene);
+  player.hidden = false;
+  pAudio.play().catch(() => {});
+}
 function nextPlayable(fromId) {
   if (!data) return null;
   const pool = data.scenes.filter((scene) => scene.real_seconds);
@@ -249,17 +257,36 @@ autoButton.addEventListener("click", () => {
   setStatus(autoplayNext ? "Autoplay next scene: on" : "Autoplay next scene: off");
 });
 
-pAudio.addEventListener("ended", () => {
+pAudio.addEventListener("ended", async () => {
   if (!autoplayNext) return;
   const next = nextPlayable(playingId);
-  if (!next) {
-    setStatus("Autoplay finished — last scene with audio.");
+  if (next) {
+    advanceNext(next);
+    const card = [...$("#list").children]
+      .find((element) => element.querySelector("h3")?.textContent === next.id);
+    if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
   }
-  openPlayer(next);
-  const card = [...$("#list").children]
-    .find((element) => element.querySelector("h3")?.textContent === next.id);
-  if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+
+  // At a part boundary, try subsequent parts until one has playable audio.
+  const parts = currentParts();
+  const currentIndex = parts.findIndex((part) => part.id === activePart?.id);
+  for (const part of parts.slice(currentIndex + 1)) {
+    let partData;
+    try { partData = await getPartData(part); }
+    catch (error) { console.error(`Could not load next part ${part.id}`, error); continue; }
+    const first = partData.scenes.find((scene) => scene.real_seconds);
+    if (!first) continue;
+    activePart = part;
+    data = partData;
+    restoredSceneId = first.id;
+    $("#part").value = part.id;
+    saveState(first.id);
+    await loadPart(part);
+    advanceNext(first);
+    return;
+  }
+  setStatus("Autoplay finished — last playable scene in this volume.");
 });
 
 paintAutoButton();
